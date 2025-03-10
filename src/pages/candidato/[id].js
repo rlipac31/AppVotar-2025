@@ -5,6 +5,7 @@ import styles from '../../styles/Home.module.css';
 import styles2 from './candidatoId.module.css'
 import Image from 'next/image';
 import Formulario from '../../ui/formulario/Formulario';
+
 export default function Candidato() {
   const { query } = useRouter();
   const { id } = query;

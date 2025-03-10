@@ -101,7 +101,7 @@ const Formulario = () => {
                     value={identity}
 
                     maxlength={8}
-                    onChange={(e) => setIdentity(parseInt(e.target.value))}
+                    onChange={(e) => setIdentity(e.target.value)}
                 />
             </div>
             <div className={styles.form__container__localidad}>
