@@ -1,24 +1,18 @@
-6import Sidebar from '../../ui/layout/sidebar';
+import Sidebar from '../../ui/layout/sidebar';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import styles from '../../styles/Home.module.css';
 import styles2 from './candidatoId.module.css'
-
 import Image from 'next/image';
 import Formulario from '../../ui/formulario/Formulario';
-
-
 export default function Candidato() {
   const { query } = useRouter();
   const { id } = query;
-
   const [candidatoId, setCandidatoId] = useState(null);
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     const loadCandidato = async () => {
       try {
-
         const  URL = `https://app-votos-cnnb.onrender.com/api/candidatos/${id}`;
        // const urlLocal = `http://localhost:5000/api/candidatos/${id}`;
         const response = await fetch(URL);
@@ -34,10 +28,6 @@ export default function Candidato() {
 
   }, []); //El array vacío asegura que useEffect se ejecute solo una vez
 
-  
-
- 
- 
   if(candidatoId != null){
     const { nameCandidato, surname, imagen, political_party, biography, _id }=candidatoId;
     return (
@@ -84,14 +74,10 @@ export default function Candidato() {
             </div>
          </div>
   
-        }
-  
-  
+  }
       </div>
   
     )
   }
- 
-
   
 }
