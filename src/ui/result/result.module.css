@@ -1,0 +1,17 @@
+
+.char__container{
+  padding: 0vh 0vw;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--primary-font);
+  color: var(--color-light);
+}
+.char__container canvas{  
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap:2rem;
+}

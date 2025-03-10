@@ -1,0 +1,24 @@
+.menu__container{
+  display: block;
+  margin: auto;
+  padding: 2rem 2rem 2rem 1rem;
+  background-color: var(--color2);
+  border-bottom-right-radius: 3px;
+}
+.menu__container img{
+  width: 200px;
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem 
+}
+.menu__container__links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.menu__container__links a{
+  color: var(--color-light);
+  text-decoration: none;
+  font-family: var(--primary-font);
+}
