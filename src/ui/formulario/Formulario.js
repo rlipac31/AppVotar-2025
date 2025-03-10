@@ -40,7 +40,7 @@ const Formulario = () => {
             localidad: localidad
         }
         try {
-            const res = await fetch(`http://localhost:5000/api/votos/${id}`, {
+            const res = await fetch(`https://app-votos-cnnb.onrender.com/api/votos/${id}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

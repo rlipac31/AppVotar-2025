@@ -8,7 +8,7 @@ const ResultVotos = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const URL=`http://localhost:5000/api/votos/result-votos`;
+      const URL=`https://app-votos-cnnb.onrender.com/api/votos/result-votos`;
       const res = await fetch(URL);
       const resultadoVotos = await res.json();
     
