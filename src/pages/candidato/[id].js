@@ -1,4 +1,4 @@
-import Sidebar from '../../ui/layout/sidebar';
+6import Sidebar from '../../ui/layout/sidebar';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import styles from '../../styles/Home.module.css';
@@ -18,7 +18,9 @@ export default function Candidato() {
   useEffect(() => {
     const loadCandidato = async () => {
       try {
-        const URL = `http://localhost:5000/api/candidatos/${id}`;
+
+        const  URL = `https://app-votos-cnnb.onrender.com/api/candidatos/${id}`;
+       // const urlLocal = `http://localhost:5000/api/candidatos/${id}`;
         const response = await fetch(URL);
         const {candidato} = await response.json();
         setCandidatoId(candidato);
