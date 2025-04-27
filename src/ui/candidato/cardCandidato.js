@@ -21,7 +21,7 @@ const CardCandidato = ({candidato}) => {
             <div className={styles.card__article__items}>
                 <p className={`${styles.card__article__items__parrafo}  `}>{political_party.name}</p>
                   <Image
-                  src={political_party.imageUrl}
+                  src={political_party.imgeUrl}
                   width={30}
                   height={30}
                   alt={`imagen Partido candidato`}

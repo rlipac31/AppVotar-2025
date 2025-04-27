@@ -9,8 +9,8 @@ const useCandidato = () => {
     const loadCandidato= async()=>{
 
       try {
-        const URL = `https://app-votos-cnnb.onrender.com/api/candidatos/`;
-       // const urlLocal =`http://localhost:5000/api/candidatos/`;
+       // const URL = `https://app-votos-cnnb.onrender.com/api/candidatos/`;
+        const URL =`http://localhost:5000/api/candidatos/`;
         const response = await fetch(URL);
         const resultado = await response.json();
        // console.log('API result:', resultado);

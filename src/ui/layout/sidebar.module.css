@@ -7,3 +7,8 @@
   max-height: auto;
  
 }
+.boton__container{
+  border: solid 2px  red;
+  display: inline-block;
+  margin: 3rem 5rem;
+}

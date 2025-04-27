@@ -50,13 +50,13 @@ export default function Candidato() {
                           />
                           <div className={styles2.info__datos__container}>
                             <div className={styles2.info__datos__container__names}>
-                              <p>Nombre: {nameCandidato.firstName}</p>
+                              <p>Nombre: {nameCandidato.firstName}{nameCandidato.lastName}</p>
                               <p>{surname.paternal} {surname.maternal}</p>
                             </div>                        
                                <p>Partido Politico: {political_party.name}</p>
                                <Image
                                   
-                                    src={political_party.imageUrl}
+                                    src={political_party.imgeUrl}
                                     width={200}
                                     height={250}
                                     alt={`imagen Partido candidato`}
@@ -64,8 +64,8 @@ export default function Candidato() {
                           </div>
                       </div>
                  <div className={styles2.container__candidato__info__reseña}>
-                     <p><strong> Reseña Biografica: </strong> {biography.resumenBio}</p>
-                     < a  href={biography.link_wiki}>saber mas</a>
+                     <p><strong> Reseña Biografica: </strong> {biography.resumenBio} yaa cambio</p>
+                     <a  href={biography.link_wiki}>saber mas</a>
                  </div>
                   
                 </div>
