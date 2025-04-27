@@ -14,8 +14,8 @@ export default function Candidato() {
   useEffect(() => {
     const loadCandidato = async () => {
       try {
-        const  URL = `https://app-votos-cnnb.onrender.com/api/candidatos/${id}`;
-       // const urlLocal = `http://localhost:5000/api/candidatos/${id}`;
+        //const  URL = `https://app-votos-cnnb.onrender.com/api/candidatos/${id}`;
+       const URL = `http://localhost:5000/api/candidatos/${id}`;
         const response = await fetch(URL);
         const {candidato} = await response.json();
         setCandidatoId(candidato);
@@ -50,21 +50,21 @@ export default function Candidato() {
                           />
                           <div className={styles2.info__datos__container}>
                             <div className={styles2.info__datos__container__names}>
-                              <p>Nombre: {nameCandidato.firstName}{nameCandidato.lastName}</p>
-                              <p>{surname.paternal} {surname.maternal}</p>
+                              <p>Nombres: {nameCandidato.firstName} {nameCandidato.lastName}</p>
+                              <p>Apellidos: {surname.paternal} {surname.maternal}</p>
                             </div>                        
                                <p>Partido Politico: {political_party.name}</p>
                                <Image
                                   
                                     src={political_party.imgeUrl}
-                                    width={200}
-                                    height={250}
+                                    width={150}
+                                    height={200}
                                     alt={`imagen Partido candidato`}
                                   />                          
                           </div>
                       </div>
                  <div className={styles2.container__candidato__info__reseña}>
-                     <p><strong> Reseña Biografica: </strong> {biography.resumenBio} yaa cambio</p>
+                     <p><strong> Reseña Biografica: </strong> {biography.resumenBio}</p>
                      <a  href={biography.link_wiki}>saber mas</a>
                  </div>
                   
