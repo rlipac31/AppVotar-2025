@@ -1,13 +1,17 @@
+
+
+
+
 import { useState, useEffect } from "react";
 
-import styles from "../styles/Home.module.css";
-import Sidebar from "../ui/layout/sidebar";
-import useCandidato from "../hooks/useCandidato";
-import CardCandidato from "../ui/candidato/cardCandidato";
+import styles from "../../styles/Home.module.css";
+import Sidebar from "../../ui/layout/sidebar";
+import useCandidato from "../../hooks/useCandidato";
+import CardCandidato from "../../ui/candidato/cardCandidato";
 
 
 
-export default function Home() {
+export default function CandiatoPage() {
 const candidatos = useCandidato();
 
 
@@ -16,10 +20,9 @@ const candidatos = useCandidato();
        <div className={styles.main}>
           
               <Sidebar />
-               
               <div className={styles.main__container}>
                   <h1 className={styles.main__container__title}>Lista de Candidatos  2026</h1>
-
+              
                 <div className={styles.main__container__card}>
                     {
                       candidatos && candidatos.length > 0 ? (
@@ -31,6 +34,7 @@ const candidatos = useCandidato();
                         )
                     }  
                 </div>
+
               </div>
          </div>
     </>
