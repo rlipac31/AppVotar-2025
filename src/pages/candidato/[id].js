@@ -14,8 +14,8 @@ export default function Candidato() {
   useEffect(() => {
     const loadCandidato = async () => {
       try {
-        //const  URL = `https://app-votos-cnnb.onrender.com/api/candidatos/${id}`;
-       const URL = `http://localhost:5000/api/candidatos/${id}`;
+      const  URL = `https://app-votos-cnnb.onrender.com/api/candidatos/${id}`;
+       //const URL = `http://localhost:5000/api/candidatos/${id}`;
         const response = await fetch(URL);
         const {candidato} = await response.json();
         setCandidatoId(candidato);
