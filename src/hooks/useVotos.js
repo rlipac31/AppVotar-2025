@@ -10,8 +10,8 @@ const useVotos = () => {
       const loadVotos= async()=>{
   
         try {
-          const URL =`https://app-votos-cnnb.onrender.com/api/votos/result-votos`;
-        //  const URL=`http://localhost:5000/api/votos/result-votos`;
+          //const URL =`https://app-votos-cnnb.onrender.com/api/votos/result-votos`;
+         const URL=`http://localhost:5000/api/votos/result-votos`;
           const response = await fetch(URL);
           const resultado = await response.json();
          // console.log('API result:', resultado);

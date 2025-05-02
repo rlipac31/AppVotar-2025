@@ -1,16 +1,19 @@
+
+
 .main{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
- 
 }
 
 
 .main__container{
   display: block;
   margin: auto;
-
+  /* border: solid 2px red; */
+ 
 }
+
+
 .main__container__title{
   font-size: 32px;
   font-family:var(--primary-font);
@@ -34,3 +37,100 @@
   flex-wrap: wrap;
   gap: 3rem;
 }
+
+.main__container__header{
+  background-color: var(--primary-color);
+  width: 100vw;
+  padding: 0.5rem 0rem;
+}
+
+.header__menu{
+  margin-left: 6vw;
+  margin-right: 6vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.logo{
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo > p {
+  font-family: var(--primary-font);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.menu__links{
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__links__link  {
+ list-style: none;
+}
+.menu__links__link a{
+  text-decoration: none;
+  color: white;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+}
+
+
+.main__container__hero{
+  display: inline-block;
+  background-image: url('../../public//votos/marca-peru.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center ;
+  height: 90vh;
+}
+.container__hero{
+  margin-left: 6vw;
+  margin-right: 6vw;
+  margin-top: 13rem;
+  display: flex;
+  flex-direction: row;
+justify-content: space-between;
+}
+.hero__mascara{
+  padding: 1.5rem;
+  display: inline-block;
+  background: rgba(40, 45, 61, 0.527);
+  width: 49%;
+  height: 35%;
+  color: white;
+}
+
+.mascara__article{
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+.article__slogan  span{
+  /* color: rgb(100, 100, 211); */
+  color: var(--blue-white);
+}
+.mascara__article__parrafo{
+  margin-top: 0.5rem;
+  font-family: var(--secundary-font);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+  
+/* --primary-font:"Montserrat", serif;
+--primary-color:#12192c;
+--secundary-color:#124463;
+--tercer-color:#120907 ;
+--blue-white: #e7ffff;
+--color-light:#ffffff; */

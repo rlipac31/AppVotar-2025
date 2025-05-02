@@ -1,8 +1,4 @@
 
-
-
-
-
 export const data = [
   {
     "id": "01",

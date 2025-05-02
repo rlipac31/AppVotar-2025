@@ -1,19 +1,23 @@
+/* 
+@import "tailwindcss"; 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+ */
 
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 
 :root {
 
   --primary-font:"Montserrat", serif;
+  --secundary-font: "Roboto Mono", monospace;
   --primary-color:#12192c;
   --secundary-color:#124463;
   --tercer-color:#120907 ;
-  --blue-white: #e7ffff;
+  --blue-white: #6875eb;
   --color-light:#ffffff;
-
+}
 /*   --color1: #120907;
 --color2 : #12192c;
 --color3 : #124463;
@@ -27,7 +31,6 @@
 --color8: #54a9f7;
 --color9: #a3dbff;
 --color10 : #e7ffff; */
-}
 
 /* 
 azul 0

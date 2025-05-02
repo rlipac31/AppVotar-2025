@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from './nav-menu.module.css'
 import logoVote from '../../../../public/votos/vote.svg'
-import Boton from '../../boton/Boton'
+//import Boton from '../../boton/Boton'
 import AlertPopup from '../../alert/Popup'
 const NavMenu = () => {
   return (
@@ -16,17 +16,18 @@ const NavMenu = () => {
       <nav>
           <ul className={styles.menu__container__links}>
             <Link href={'/'}>Home</Link>
-            <Link href={'#'}>Candidatos</Link>
+            <Link href={'/candidatos'}>Candidatos</Link>
             <Link href={'#'}>About</Link>
               <Link href={'#'}> 
-              
+              {/* 
                     <Boton
-                    texto={"Login"}
-                    textColor={"#ffffff"}
-                    bgColor={'var(--primary-color)'}
-                    size={'medium'}
-                  />
-                <AlertPopup/>
+                        texto={"Login"}
+                        textColor={"#ffffff"}
+                        bgColor={'var(--primary-color)'}
+                        size={'medium'}
+                   />
+                     */}
+                    <AlertPopup/>
                  
                 </Link>
 

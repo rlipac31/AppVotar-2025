@@ -1,7 +1,4 @@
 
-
-
-
 import { useState, useEffect } from "react";
 
 import styles from "../../styles/Home.module.css";
@@ -10,7 +7,7 @@ import useCandidato from "../../hooks/useCandidato";
 import CardCandidato from "../../ui/candidato/cardCandidato";
 
 
-
+//
 export default function CandiatoPage() {
 const candidatos = useCandidato();
 
@@ -40,3 +37,4 @@ const candidatos = useCandidato();
     </>
   );
 }
+ 
