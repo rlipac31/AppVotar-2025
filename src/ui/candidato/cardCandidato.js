@@ -1,6 +1,6 @@
 import styles from './card.module.css'
 import {  inter, lusitana  } from '../fonts';
-import Image from 'next/image';
+import SafeImage from '../candidato/SafeImage';
 import Boton from '../boton/Boton';
 import Link from 'next/link';
 
@@ -9,7 +9,7 @@ const CardCandidato = ({candidato}) => {
   return (
     <>
       <div className={styles.card}>
-      <Image
+      <SafeImage
             className={styles.card__image}
               src={imagen.url}
               width={90}

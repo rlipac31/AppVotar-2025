@@ -3,6 +3,18 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['res.cloudinary.com', 'elcomercio.pe', 'www.defensa.com','www.shutterstock.com','encrypted-tbn0.gstatic.com','pbs.twimg.com'],
+    domains: ['res.cloudinary.com'], // Solución más directa
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        pathname: '/**', // Permite cualquier path de Cloudinary
+      },
+      {
+        protocol: 'http',
+        hostname: 'res.cloudinary.com',
+        pathname: '/**',
+      }
+    ],
   },
 };

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import logo from '../../public/votos/vote.svg'
 import Link from 'next/link';
 import colage from '../../public/votos/colage.png'
+import ResultVotos from '../ui/result/ResultVotos';
 //
 export default function Home() {
   return (
@@ -44,10 +45,10 @@ export default function Home() {
                         Tus datos no se almacenan ni se comparten. Solo tu voz construye el resultado</p>
                     </article>
                 </div>
-           {/*  <div className={style.hero__mascara}>     
+           <div className={style.hero__mascara}>     
             
-             Resultados
-            </div> */}
+             <ResultVotos/>
+            </div>
        </div>
       
       
