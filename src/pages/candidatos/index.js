@@ -5,6 +5,7 @@ import styles from "../../styles/Home.module.css";
 import Sidebar from "../../ui/layout/sidebar";
 import useCandidato from "../../hooks/useCandidato";
 import CardCandidato from "../../ui/candidato/cardCandidato";
+import NavMenu from "../../ui/layout/menu/NavMenu";
 
 
 //
@@ -16,8 +17,11 @@ const candidatos = useCandidato();
     <>
        <div className={styles.main}>
           
-              <Sidebar />
-              <div className={styles.main__container}>
+           <Sidebar />
+            <div className={styles.header__movile}>
+              <NavMenu/>
+            </div>
+           <div className={styles.main__container}>
                   <h1 className={styles.main__container__title}>Lista de Candidatos  2026</h1>
               
                 <div className={styles.main__container__card}>

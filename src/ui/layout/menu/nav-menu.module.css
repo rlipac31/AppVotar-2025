@@ -22,3 +22,28 @@
   text-decoration: none;
   font-family: var(--primary-font);
 }
+
+@media (max-width: 1000px) {
+
+  .menu__container img{
+    width: 70px;
+  }
+ 
+  }
+
+  @media (max-width: 768px) {
+    .menu__container {
+      min-width: 90vw;
+      max-width:90vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      }
+      .menu__container__links{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+      }
+    }   

@@ -12,3 +12,19 @@
   display: inline-block;
   margin: 3rem 5rem;
 }
+@media (max-width: 1000px) {
+  .main__container__sidebar{
+    background-color: var(--primary-color);
+    max-width: 12vw;
+    min-width: 12vw;
+  }
+    
+  }
+
+@media (max-width: 768px) {
+.main__container__sidebar{
+ display: none;
+ 
+}
+  
+}
