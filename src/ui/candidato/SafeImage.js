@@ -14,6 +14,7 @@ const SafeImage = ({ src, alt, ...props }) => {
       onError={(e) => {
         e.target.src = '/placeholder.jpg'; // Fallback para imágenes rotas
       }}
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
     />
   );
 };

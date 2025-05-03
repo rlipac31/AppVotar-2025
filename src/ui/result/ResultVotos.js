@@ -1,12 +1,19 @@
 import { useEffect, useState } from 'react';
-import PieChart from './PieChart'
+//import PieChart from './PieChart'
+import BarChart from './BartChart'
 import styles from './result.module.css'
+import useVotos from '../../hooks/useVotos'
+import { set } from 'mongoose';
 
 const ResultVotos = () => {
-  const [chartData, setChartData] = useState([]);
+
+
+  const votos = useVotos();
+ 
+   const [chartData, setChartData] = useState([]);
   const [chartLabels, setChartLabels] = useState([]);
 
-  useEffect(() => {
+ useEffect(() => {
     const fetchData = async () => {
       //const URL=`https://app-votos-cnnb.onrender.com/api/votos/result-votos`;
 
@@ -19,17 +26,13 @@ const ResultVotos = () => {
 
     };
 
-    //fetchData();
-  }, []);
-
-  console.log('data votos: ', chartData)
-  console.log('labels : ', chartLabels)
-
+    fetchData();
+  }, []); 
 
 
   return (
     <div className={styles.char__container}>
-      <PieChart
+      <BarChart
         data={chartData}
         labels={chartLabels} />
     </div>

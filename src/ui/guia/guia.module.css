@@ -1,0 +1,61 @@
+.guia{
+    
+    display: block;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    background-color: var(--color-light);
+}
+.guia > h3 {
+    margin: 1.5rem 0rem;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    color: var(--secundary-color);
+  
+    
+}
+/* --primary-font:"Montserrat", serif;
+--secundary-font: "Roboto Mono", monospace; */
+.guia__container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.guia__container__card{
+    border-top-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    padding: 1rem;
+    background: rgb(232, 250, 255);
+    width: 23vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+.card__title__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.title__container__icon{
+    color:  var(--secundary-color);
+    font-size: 2rem;
+}
+.guia__container__card  h3 {
+    font-family: var(--primary-font);
+    color: var(--secundary-color);
+    font-size: 1.1rem;
+}
+
+.guia__container__card > p {
+    font-family: var(--secundary-font);
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--secundary-color);
+}

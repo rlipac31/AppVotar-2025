@@ -1,13 +1,15 @@
-/* 
-@import "tailwindcss"; 
 
+/* @import "tailwindcss"; 
 
 
  */
 
+
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-
+ html {
+  scroll-behavior: smooth;
+}
 :root {
 
   --primary-font:"Montserrat", serif;
@@ -15,7 +17,8 @@
   --primary-color:#12192c;
   --secundary-color:#124463;
   --tercer-color:#120907 ;
-  --blue-white: #6875eb;
+  --cuarto-color:#a7b9df ;
+  --blue-white: #ecfcff;
   --color-light:#ffffff;
 }
 /*   --color1: #120907;

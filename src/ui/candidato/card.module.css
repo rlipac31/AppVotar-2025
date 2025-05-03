@@ -1,7 +1,4 @@
 .card{
-  
-  
-  /* background: rgb(233, 246, 255); */
   background: var(--blue-white);
   max-width: 200px;
   max-height: auto;
@@ -11,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 0.1rem 0.1rem 1rem 0.1rem;
+ /*  padding: 0.1rem 0.1rem 1rem 0.1rem; */
   border-radius: 0.5rem;
   overflow:hidden;
   /*  probar */
@@ -34,6 +31,8 @@
   height: 70%;
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
   transition: 0.3s;
+  image-rendering: -webkit-optimize-contrast; /* Mejor renderizado en Chrome */
+  image-rendering: crisp-edges; /* Para Firefox */
 }
 
 
@@ -69,6 +68,9 @@
   flex-wrap: nowrap;
   align-items: center;
   font-size: 12px;
+}
+.card__article__items img {
+  border-radius: 0.4rem;
 }
 /* .card__article__items img{
 

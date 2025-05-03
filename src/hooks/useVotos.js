@@ -4,13 +4,13 @@ import { useState, useEffect } from 'react';
 const useVotos = () => {
   
     const [ votos, setVotos ] = useState(null);
-    const [ loading, setLoading ] = useState(false);
+    const [ loading, setLoading ] = useState(true);
   
     useEffect(() => {
       const loadVotos= async()=>{
   
         try {
-          //const URL =`https://app-votos-cnnb.onrender.com/api/votos/result-votos`;
+          //const URL =`https://app-votos-cnnb.onrender.com/api/votos/result-votos`;s
          const URL=`http://localhost:5000/api/votos/result-votos`;
           const response = await fetch(URL);
           const resultado = await response.json();
@@ -25,11 +25,15 @@ const useVotos = () => {
       loadVotos();
      
     }, []); //El array vacío asegura que useEffect se ejecute solo una vez
-    
+   // console.log(votos);
+   // const { nameCandidatos,resultadoVotos, votosCandidato } = votos
   return (
 
       // proppiedates
       votos
+   /*    nameCandidatos,
+      resultadoVotos,
+      votosCandidato */
   )
 }
 

@@ -6,6 +6,7 @@ import logo from '../../public/votos/vote.svg'
 import Link from 'next/link';
 import colage from '../../public/votos/colage.png'
 import ResultVotos from '../ui/result/ResultVotos';
+import ComoFuncionaCards from '../ui/guia/ComoFunciona';
 //
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
             <li className={style.menu__links__link}> <Link href={'/'}>Home</Link></li>
             <li className={style.menu__links__link}> <Link href={'#'}>Resultados</Link></li>
             <li className={style.menu__links__link}> <Link href={'/candidatos'}>Candidatos</Link></li>
-            <li className={style.menu__links__link}> <Link href={'#'}>Como funciona</Link></li>
+            <li className={style.menu__links__link}> <Link href={'#como-funciona'}>Como funciona</Link></li>
             <li className={style.menu__links__link}> <Link href={'#'}>About</Link></li>
           </ul>
         </div>
@@ -47,14 +48,17 @@ export default function Home() {
                 </div>
            <div className={style.hero__mascara}>     
             
-             <ResultVotos/>
+           <ResultVotos />
             </div>
-       </div>
-      
-      
+       </div>     
       </section>
-      <footer>
-        <p>web desarrollaada por Richard  Lipa</p>
+      <section className={style.main__container__comofunciona}   id="como-funciona">
+        <ComoFuncionaCards />
+      </section>
+      <footer className={style.footer}>
+      
+        <p>web Desarrrollada por &copy; 2024 rlipac31@gmail.com Todos los derechos reservados.</p>
+        <Link href={'https://github.com/rlipac31'}>GitHub:rlipac31</Link>
       </footer>
     </div>
  

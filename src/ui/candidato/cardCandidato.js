@@ -1,20 +1,25 @@
 import styles from './card.module.css'
 import {  inter, lusitana  } from '../fonts';
-import SafeImage from '../candidato/SafeImage';
+//import SafeImage from '../candidato/SafeImage';
+import Image from 'next/image';
 import Boton from '../boton/Boton';
 import Link from 'next/link';
 
 const CardCandidato = ({candidato}) => {
   const { nameCandidato, surname, imagen, political_party, biography, _id }= candidato;
+  const { url } = imagen;
+  console.log('imaaggen  ...', imagen)
   return (
     <>
       <div className={styles.card}>
-      <SafeImage
-            className={styles.card__image}
-              src={imagen.url}
+      <Image
+              className={styles.card__image}
+              src={url}
               width={90}
               height={120}
               alt={imagen.alt}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            
           />  
           <article className={`${styles.card__article} ${inter.className} `}>
           <h4 className={`${styles.card__article__title} ${inter.className} `}>{nameCandidato.firstName} {surname.paternal} </h4>
@@ -25,6 +30,7 @@ const CardCandidato = ({candidato}) => {
                   width={40}
                   height={40}
                   alt={`imagen Partido candidato`}
+                   sizes="(max-width: 768px) 3rem, (max-width: 1200px) 4rem"
                 />  
             </div>
 

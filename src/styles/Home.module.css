@@ -87,7 +87,7 @@
 
 .main__container__hero{
   display: inline-block;
-  background-image: url('../../public//votos/marca-peru.png');
+  background-image: url('../../public//votos/lima-costa_1920.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center ;
@@ -102,10 +102,11 @@
 justify-content: space-between;
 }
 .hero__mascara{
+border-radius: 0.5rem;
   padding: 1.5rem;
   display: inline-block;
-  background: rgba(40, 45, 61, 0.527);
-  width: 49%;
+  background: rgba(27, 47, 114, 0.623); 
+  width: 45%;
   height: 35%;
   color: white;
 }
@@ -126,7 +127,26 @@ justify-content: space-between;
   font-weight: 500;
   font-size: 0.9rem;
 }
-
+.main__container__comofunciona{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer{
+  padding: 2rem;
+  background-color: var(--primary-color);
+  color: var(--color-light);
+  font-family:var(--secundary-font);
+  font-size: 1.2rem;
+}
+.footer a {
+  text-decoration: none;
+  color: var(--color-light);
+}
+.footer a:hover {
+  color: var(--cuarto-color);
+}
   
 /* --primary-font:"Montserrat", serif;
 --primary-color:#12192c;

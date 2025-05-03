@@ -68,3 +68,6 @@ line-height: 1.5;
   align-items: flex-start;
   gap: 2rem;
 }
+.info__datos__container img {
+  border-radius: 0.6rem;
+}

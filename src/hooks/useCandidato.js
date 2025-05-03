@@ -13,7 +13,7 @@ const useCandidato = () => {
         const URL =`http://localhost:5000/api/candidatos/`;
         const response = await fetch(URL);
         const resultado = await response.json();
-       // console.log('API result:', resultado);
+       // console.log('API result:', resultado);ss
         setCandidatos(resultado.candidatos)
         setLoading(false);
       } catch (error) {
