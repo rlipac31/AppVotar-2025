@@ -1,5 +1,5 @@
 import styles from './card.module.css'
-import {  inter, lusitana  } from '../fonts';
+import {  inter } from '../../lib/fonts';
 //import SafeImage from '../candidato/SafeImage';//genera conflictos
 import Image from 'next/image';
 import Boton from '../boton/Boton';

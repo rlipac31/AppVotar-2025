@@ -1,4 +1,5 @@
 'use client';
+import {  montserrat, roboto } from '../../lib/fonts'
 import { GrValidate } from "react-icons/gr";
 import style from './guia.module.css'
 
@@ -19,7 +20,7 @@ export default function ComoFuncionaCards() {
   ];
 
   return (
-  <div className={style.guia}>
+  <div className={`${style.guia} ${montserrat.className}`}>
     <h3>Como Funciona?</h3>
     
     <div className={style.guia__container}>
@@ -32,7 +33,7 @@ export default function ComoFuncionaCards() {
           />
           </div>
          
-          <p className="text-gray-700">{paso.descripcion}</p>
+          <p className={`${roboto.className} text-gray-700 `}>{paso.descripcion}</p>
         </div>
       ))}
     </div>

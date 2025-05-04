@@ -1,11 +1,8 @@
-const { roboto } = require('src/lib/fonts');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  prefix: 'tw-',
-  corePlugins: {
-    preflight: false,  // Opcional: desactiva el reset CSS
-  },
+
+  cache: false,
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
@@ -13,11 +10,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-       fontFamily: {
+      /*  fontFamily: {
         roboto: ['--font-secundary'],
         monse: ['--font-primary'],
       
-      }, 
+      },  */
     },
   },
   plugins: [],

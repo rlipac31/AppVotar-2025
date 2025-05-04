@@ -1,5 +1,6 @@
 // app/page.tsx
 //import Sidebar from '../ui/layout/sidebar';
+import { montserrat,  roboto } from '../lib/fonts';
 import style from '../styles/Home.module.css'
 import Image from 'next/image';
 import logo from '../../public/votos/vote.svg'
@@ -8,7 +9,7 @@ import colage from '../../public/votos/colage.png'
 import ResultVotos from '../ui/result/ResultVotos';
 import ComoFuncionaCards from '../ui/guia/ComoFunciona';
 import Footer from '../ui/layout/footer/Footer';
-import Header from '../ui/layout/header/HeaderTw';
+import HeaderTw from '../ui/layout/header/HeaderTw';
 
 //s
 export default function Home() {
@@ -17,17 +18,17 @@ export default function Home() {
   
      <div className={style.main__container}>
       <header className={style.main__container__header}>
-       <Header/>
+       <HeaderTw/>
       </header>
       <section className={style.main__container__hero}>
-        <h2 className='monse font-medium text-4xl'>Encuestas reales sin intereses politicos.</h2>
+        <h2 className='font-monse font-medium text-4xl'>Encuestas reales sin intereses politicos.</h2>
         <div className={style.container__hero}>
           
               <div className={style.hero__mascara}>       
-                    <article className={style.mascara__article}>
+                    <article className={`${style.mascara__article} ${montserrat.className}`}>
                       <p className={style.article__slogan}>Encuestas reales, <span>sin</span> intereses politicos. </p>
                         <p className={style.article__slogan}>Votas tú, <span>no </span>los medios.</p>
-                        <p className={style.mascara__article__parrafo}>Validamos con DNI para evitar fraudes, sin guardar datos personales.
+                        <p className={`${style.mascara__article__parrafo} ${roboto.className}`}>Validamos con DNI para evitar fraudes, sin guardar datos personales.
                         Solo contamos lo que de verdad piensa el país.
                         Sin manipulación, sin filtros, solo tu opinión real.
                         Tus datos no se almacenan ni se comparten. Solo tu voz construye el resultado</p>

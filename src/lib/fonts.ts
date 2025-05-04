@@ -20,3 +20,4 @@ export const roboto = Roboto_Mono({
     weight: ['400', '700'], // los pesos que usarás
     variable: '--font-primary', // opcional si usas CSS variables
   });
+//s
