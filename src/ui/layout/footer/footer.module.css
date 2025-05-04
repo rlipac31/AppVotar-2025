@@ -1,0 +1,14 @@
+.footer{
+    padding: 2rem;
+    background-color: var(--primary-color);
+    color: var(--color-light);
+    font-family:var(--secundary-font);
+    font-size: 1.2rem;
+  }
+  .footer__container a {
+    text-decoration: none;
+    color: var(--color-light);
+  }
+  .footer__container a:hover {
+    color: var(--cuarto-color);
+  }

@@ -7,35 +7,22 @@ import Link from 'next/link';
 import colage from '../../public/votos/colage.png'
 import ResultVotos from '../ui/result/ResultVotos';
 import ComoFuncionaCards from '../ui/guia/ComoFunciona';
-//
+import Footer from '../ui/layout/footer/Footer';
+import Header from '../ui/layout/header/HeaderTw';
+
+//s
 export default function Home() {
+/*   const colage = `https://res.cloudinary.com/rlipac/image/upload/v1746284696/lima-costa_1920_etpbpg.jpghttps://res.cloudinary.com/rlipac/image/upload/v1746284696/lima-costa_1920_etpbpg.jpg`; */
   return (
   
      <div className={style.main__container}>
       <header className={style.main__container__header}>
-        <div className={style.header__menu}>
-          <div className={style.header__menu__logo}>
-           <Link className={style.logo} href={'/'}>
-          
-           <Image
-              src={logo}
-              width={60}
-              height={60}
-            />
-          <p>AppVotar</p> 
-           </Link> 
-          </div>
-          <ul className={style.menu__links}>
-            <li className={style.menu__links__link}> <Link href={'/'}>Home</Link></li>
-            <li className={style.menu__links__link}> <Link href={'#'}>Resultados</Link></li>
-            <li className={style.menu__links__link}> <Link href={'/candidatos'}>Candidatos</Link></li>
-            <li className={style.menu__links__link}> <Link href={'#como-funciona'}>Como funciona</Link></li>
-            <li className={style.menu__links__link}> <Link href={'#'}>About</Link></li>
-          </ul>
-        </div>
+       <Header/>
       </header>
       <section className={style.main__container__hero}>
+        <h2 className='monse font-medium text-4xl'>Encuestas reales sin intereses politicos.</h2>
         <div className={style.container__hero}>
+          
               <div className={style.hero__mascara}>       
                     <article className={style.mascara__article}>
                       <p className={style.article__slogan}>Encuestas reales, <span>sin</span> intereses politicos. </p>
@@ -55,11 +42,7 @@ export default function Home() {
       <section className={style.main__container__comofunciona}   id="como-funciona">
         <ComoFuncionaCards />
       </section>
-      <footer className={style.footer}>
-      
-        <p>web Desarrrollada por &copy; 2024 rlipac31@gmail.com Todos los derechos reservados.</p>
-        <Link href={'https://github.com/rlipac31'}>GitHub:rlipac31</Link>
-      </footer>
+     <Footer/>
     </div>
  
   

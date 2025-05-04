@@ -1,14 +1,36 @@
+/* 
+2️⃣ Extender Estilos con @layer en tu CSS Module
+Si prefieres mantener los estilos de Tailwind en tu archivo .module.css, usa @layer:
 
-/* @import "tailwindcss"; 
+css
+ mascara.module.css 
+@layer components {
+  .mascara__article {
+    @apply bg-white p-4 rounded-lg shadow-md; Tailwind 
+    color: #333;/* CSS tradicional
+  }
+}
 
+//uso
+<article className={style.mascara__article}>
+  Contenido 
+</article>
 
  */
-
+ @import "tailwindcss";
+ 
+   @theme inline {
+  --primary-font:"Montserrat", serif;
+  --secundary-font: "Roboto Mono", monospace;
+ } 
 
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
  body, html {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
  html {
  

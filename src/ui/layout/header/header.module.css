@@ -1,0 +1,5 @@
+
+.header__menu{
+    border: solid 2px  red;
+    background-color: var(--primary-color);
+}

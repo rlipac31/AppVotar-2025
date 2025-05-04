@@ -1,7 +1,8 @@
 .container__succes{
+
   background: rgb(193, 243, 117);
   width: 18vw;
-  font-size: 20px;
-  padding: 1rem;
-  color: rgb(35, 109, 35);
+  font-size: 1.5rem;
+  padding: 1.2rem;
+  color: rgb(20, 94, 20);
 }

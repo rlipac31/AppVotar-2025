@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['res.cloudinary.com'], // Solución más directa
+   // domains: ['res.cloudinary.com'], // Solución más directa
     remotePatterns: [
       {
         protocol: 'https',

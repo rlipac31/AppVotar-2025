@@ -1,12 +1,24 @@
+const { roboto } = require('src/lib/fonts');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  safelist: ["p-3"],
+  prefix: 'tw-',
+  corePlugins: {
+    preflight: false,  // Opcional: desactiva el reset CSS
+  },
   content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+       fontFamily: {
+        roboto: ['--font-secundary'],
+        monse: ['--font-primary'],
+      
+      }, 
+    },
   },
   plugins: [],
 }

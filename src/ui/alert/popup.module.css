@@ -1,0 +1,22 @@
+.container{
+    background-color: var(--blue-white);
+    color: var(--primary-color);
+}
+.container__boton{
+    background-color: var(--primary-color);
+    width: 5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: var(--blue-white);
+}
+.poput__contenido{
+    border: solid red 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.container__svg{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}

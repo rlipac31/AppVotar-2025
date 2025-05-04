@@ -8,15 +8,15 @@ export const lusitana = Lusitana({
     subsets: ['latin'],
 })
 
-const roboto = Roboto_Mono({
+export const roboto = Roboto_Mono({
     subsets: ['latin'],
     weight: ['400', '700'], // los pesos que usarás
-    variable: '--font-roboto', // opcional si usas CSS variables
+    variable: '--font-secundary', // opcional si usas CSS variables
   });
 
 
-  const montserrat = Montserrat({
+ export  const montserrat = Montserrat({
     subsets: ['latin'],
     weight: ['400', '700'], // los pesos que usarás
-    variable: '--font-Montserrat', // opcional si usas CSS variables
+    variable: '--font-primary', // opcional si usas CSS variables
   });
