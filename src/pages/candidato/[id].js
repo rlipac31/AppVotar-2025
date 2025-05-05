@@ -12,7 +12,10 @@ import { montserrat, roboto } from '../../lib/fonts'
 export async function getServerSideProps(context) {
   const { id } = context.params;
 
-  const res = await fetch(`http://localhost:5000/api/candidatos/${id}`);
+  //const res = await fetch(`http://localhost:5000/api/candidatos/${id}`);
+
+  const res = await fetch(`https://app-votos-cnnb.onrender.com/api/candidatos/${id}`);
+
   const { candidato } = await res.json();
   const candidatoId = candidato;
   if (!candidatoId) {
