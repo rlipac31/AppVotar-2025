@@ -9,11 +9,11 @@ const useCandidato = () => {
 
   useEffect(() => {
     const loadCandidato= async()=>{
-      console.log('precesss.env>> ', process.env.NEXT_PUBLIC_API_URL);
+    
 
       try {
-       // const URL = `https://app-votos-cnnb.onrender.com/api/candidatos/`;
-        const URL =`${process.env.NEXT_PUBLIC_API_URL}/candidatos/`;
+        const URL = `https://app-votos-cnnb.onrender.com/api/candidatos/`;
+      //  const URL =`${process.env.NEXT_PUBLIC_API_URL}/candidatos/`;
         const response = await fetch(URL);
         const resultado = await response.json();
        // console.log('API result:', resultado);ss
@@ -28,7 +28,6 @@ const useCandidato = () => {
    
   }, []); //El ar ray vacío asegura que useEffect se ejecute solo una vez
 
-  
 
   return (
    // proppiedates
