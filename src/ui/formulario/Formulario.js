@@ -101,8 +101,7 @@ const Formulario = () => {
                     type="text"
                     id="identity"
                     value={identity}
-
-                    maxlength={8}
+                    max-length={8}
                     onChange={(e) => setIdentity(e.target.value)}
                 />
             </div>

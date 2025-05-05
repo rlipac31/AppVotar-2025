@@ -5,8 +5,10 @@ import styles2 from './candidatoId.module.css'
 import Image from 'next/image';
 import Formulario from '../../ui/formulario/Formulario';
 import NavMenu from '../../ui/layout/menu/NavMenu';
+import HeaderTw from '../../ui/layout/header/HeaderTw';
 import Link from 'next/link';
 import Footer from '../../ui/layout/footer/Footer';
+import { montserrat, roboto } from '../../lib/fonts'
 export async function getServerSideProps(context) {
   const { id } = context.params;
 
@@ -30,10 +32,12 @@ export default function Candidato({ candidatoId }) {
     //const { url } = imagen;
     return (
       <div className={styles.main}>
-        <Sidebar />
-        <div className={styles.header__movile}>
-          <NavMenu />
+         <div className={styles.header__movile}>
+        {/*   <NavMenu /> */}
+          <HeaderTw />
         </div>
+        <Sidebar />
+       
         {
           !candidatoId ? <p>No ahy canddidato</p>
             :
@@ -69,7 +73,7 @@ export default function Candidato({ candidatoId }) {
                             </div>
                       </div>
                 </div>
-                <div className={styles2.container__candidato__info__reseña}>
+                <div className={`${styles2.container__candidato__info__reseña} ${roboto.className}`}>
                   <p><strong> Reseña Biografica: </strong> {biography.resumenBio}</p>
                  
                   <Link  href={biography.link_wiki}>saber mas</Link>
@@ -83,6 +87,7 @@ export default function Candidato({ candidatoId }) {
             </div>
 
         }
+        
           <Footer/>
       </div>
 

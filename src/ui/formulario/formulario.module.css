@@ -28,6 +28,7 @@
 }
 .identity__input{
   border: none;
+  background: var(--color-slate-50);
   padding: 5px 8px;
 }
 .form__container__localidad{
@@ -40,6 +41,7 @@
   font-family: "Montserrat", serif;
   padding: 5px 10px;
   border: none;
+  background: var(--color-slate-50);
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

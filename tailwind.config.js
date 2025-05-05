@@ -1,21 +1,18 @@
 
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-
-  cache: false,
+  prefix: 'tw-',
+  corePlugins: {
+    preflight: false, // Opcional
+  },
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-    './app/**/*.{js,ts,jsx,tsx}',
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./ui/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}", // Agregando src
   ],
   theme: {
-    extend: {
-      /*  fontFamily: {
-        roboto: ['--font-secundary'],
-        monse: ['--font-primary'],
-      
-      },  */
-    },
+    extend: {},
   },
   plugins: [],
-}
+};

@@ -2,88 +2,35 @@
 
   @import "tailwindcss"; 
 
- body, html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
- html {
- 
-  scroll-behavior: smooth;
-}
-:root {
-
-  --primary-font:"Montserrat", serif;
-  --secundary-font: "Roboto Mono", monospace;
-  --primary-color:#12192c;
-  --secundary-color:#124463;
-  --tercer-color:#120907 ;
-  --cuarto-color:#a7b9df ;
-  --blue-white: #ecfcff;
-  --color-light:#ffffff;
-}
-/*   --color1: #120907;
---color2 : #12192c;
---color3 : #124463;
---color4 : #1773a3;
----color5 : #20a5d8;
-
-
-
---color6: #004eb9;
---color7: #0079d7;
---color8: #54a9f7;
---color9: #a3dbff;
---color10 : #e7ffff; */
-
-/* 
-azul 0
-.color1 { #2911f1 };
-.color2 { #1f0dd0 };
-.color3 { #1409b0 };
-.color4 { #0a048f };
-.color5 { #00006f };
-
-*/
-
-/* aazul 1
-.color1 {color: #120907;}
-.color2 {color: #12192c;}
-.color3 {color: #124463;}
-.color4 {color: #1773a3;}
-.color5 {color: #20a5d8;}
-
-*/
-/* 
- azuul 2
-.color1 {color: #004eb9;}
-.color2 {color: #0079d7;}
-.color3 {color: #54a9f7;}
-.color4 {color: #a3dbff;}
-.color5 {color: #e7ffff;}
-*/
-
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  display: block;
+  
+input, textarea, select {
+  font-size: 16px; /* Tamaño mínimo para evitar zoom automático */
 }
 
-
-
+/* Deshabilita el resaltado azul en móviles */
 * {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+/* Fuerza el scroll suave */
+html {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+ 
 }
+  :root {
 
-
-/* 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+    --primary-font:"Montserrat", serif;
+    --secundary-font: "Roboto Mono", monospace;
+    --primary-color:#12192c;
+    --secundary-color:#124463;
+    --tercer-color:#120907 ;
+    --cuarto-color:#a7b9df ;
+    --blue-white: #ecfcff;
+    --color-light:#ffffff;
   }
-}
- */
+  

@@ -15,7 +15,13 @@ import { Bar } from 'react-chartjs-2';
 ChartJS.register(CategoryScale, ArcElement, LinearScale, BarElement, Title, Tooltip, Legend);
 import {   generateSolidRandomColors, generatePredefinedSolidColors  } from '../../utils/generarColor'
 
-const BarChart = ({ data, labels }) => {
+const BarChart = ({ data = [], labels = [] }) => {  // Valores por defecto
+  console.log('Datos recibidos:', { data, labels });
+  
+  // Validación adicional
+  if (!Array.isArray(data) || data.length === 0) {
+    return <div>No hay datos disponibles</div>;
+  }
   const colors = generatePredefinedSolidColors(data.length);
 
   const chartData = {

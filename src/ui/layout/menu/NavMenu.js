@@ -5,6 +5,7 @@ import styles from './nav-menu.module.css'
 import logoVote from '../../../../public/votos/vote.svg'
 import Boton from '../../boton/Boton'
 //import AlertPopup from '../../alert/Popup'
+import { montserrat} from '../../../lib/fonts'
 const NavMenu = () => {
   return (
     <div className={styles.menu__container}>
@@ -16,11 +17,11 @@ const NavMenu = () => {
         sizes="(max-width: 768px) 2rem, (max-width: 1200px) 4rem" 
       />  
       <nav>
-          <ul className={styles.menu__container__links}>
+          <ul className={`${styles.menu__container__links}  ${montserrat.className}`}>
             <Link href={'/'}>Home</Link>
             <Link href={'/candidatos'}>Candidatos</Link>
             <Link href={'#'}>Resultados</Link>
-              <Link href={'#'}> 
+            <Link href={'#'}> 
             
                     <Boton
                         texto={"Login"}

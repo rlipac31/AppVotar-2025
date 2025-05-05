@@ -21,9 +21,8 @@ export default function Home() {
        <HeaderTw/>
       </header>
       <section className={style.main__container__hero}>
-        <h2 className='font-monse font-medium text-4xl'>Encuestas reales sin intereses politicos.</h2>
-        <div className={style.container__hero}>
-          
+       
+        <div className={style.container__hero}>       
               <div className={style.hero__mascara}>       
                     <article className={`${style.mascara__article} ${montserrat.className}`}>
                       <p className={style.article__slogan}>Encuestas reales, <span>sin</span> intereses politicos. </p>
@@ -34,7 +33,7 @@ export default function Home() {
                         Tus datos no se almacenan ni se comparten. Solo tu voz construye el resultado</p>
                     </article>
                 </div>
-           <div className={style.hero__mascara}>     
+         <div className={style.hero__mascara}>     
             
            <ResultVotos />
             </div>

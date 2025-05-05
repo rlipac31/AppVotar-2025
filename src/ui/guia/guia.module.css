@@ -17,10 +17,10 @@
 /* --primary-font:"Montserrat", serif;
 --secundary-font: "Roboto Mono", monospace; */
 .guia__container{
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     gap: 2rem;
 }
@@ -30,6 +30,7 @@
     padding: 1rem;
     background: rgb(232, 250, 255);
     width: 23vw;
+    min-width:270px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -58,4 +59,18 @@
     font-weight: 500;
     font-style: italic;
     color: var(--secundary-color);
+}
+@media (max-width: 767px) {
+    .guia__container__card{
+        border-top-right-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        padding: 1rem;
+        background: rgb(232, 250, 255);
+        width: 95vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
 }
