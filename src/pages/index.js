@@ -8,9 +8,10 @@ import Link from 'next/link';
 import colage from '../../public/votos/colage.png'
 import ResultVotos from '../ui/result/ResultVotos';
 import ComoFuncionaCards from '../ui/guia/ComoFunciona';
-import Footer from '../ui/layout/footer/Footer';
+//import Footer from '../ui/layout/footer/Footer';
 import HeaderTw from '../ui/layout/header/HeaderTw';
-
+import Footer from '../ui/layout/footer/Footertw';
+import Footertw from '../ui/layout/footer/Footertw';
 //s
 export default function Home() {
 /*   const colage = `https://res.cloudinary.com/rlipac/image/upload/v1746284696/lima-costa_1920_etpbpg.jpghttps://res.cloudinary.com/rlipac/image/upload/v1746284696/lima-costa_1920_etpbpg.jpg`; */
@@ -33,16 +34,18 @@ export default function Home() {
                         Tus datos no se almacenan ni se comparten. Solo tu voz construye el resultado</p>
                     </article>
                 </div>
-         <div className={style.hero__mascara}>     
-            
-           <ResultVotos />
-            </div>
+        
        </div>     
       </section>
       <section className={style.main__container__comofunciona}   id="como-funciona">
         <ComoFuncionaCards />
       </section>
-     <Footer/>
+      <div className={style.main__container__resultados} id="resultados">   
+          <h2 className=' text-center text-slate-800 my-10 text-3xl font-semibold'>Resultados</h2>   
+           <ResultVotos />
+      </div>
+    {/*  <Footer/> */}
+    <Footertw/>
     </div>
  
   

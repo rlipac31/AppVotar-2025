@@ -33,7 +33,7 @@ export default function ComoFuncionaCards() {
           />
           </div>
          
-          <p className={`${roboto.className} text-gray-700 `}>{paso.descripcion}</p>
+          <p className={`${roboto.className} text-gray-700 text-base `}>{paso.descripcion}</p>
         </div>
       ))}
     </div>

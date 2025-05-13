@@ -8,6 +8,11 @@
   gap: 1rem;
   font-family: var(--primary-font);
   color: var(--color-light);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background: rgba(27, 47, 114, 0.623); 
+  height: auto;
+  color: white;
 }
 .char__container canvas{  
   display: flex;
