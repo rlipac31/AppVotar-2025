@@ -1,3 +1,6 @@
+
+'use client'
+
 import { notFound } from 'next/navigation';
 import { useEffect, useState } from 'react';
 //import PieChart from './PieChart'
@@ -7,9 +10,10 @@ import styles from './result.module.css'
 
 export async function getServerSideProps() {
   // 1. Configura la URL correctamente (usa variables de entorno)
-  const API_URL = process.env.NODE_ENV === 'production'
+ /*  const API_URL = process.env.NODE_ENV === 'production'
     ? 'https://app-votos-cnnb.onrender.com/api/votos/result-votos'
-    : 'http://localhost:5000/api/votos/result-votos';
+    : 'http://localhost:5000/api/votos/result-votos'; */
+     const API_URL = 'https://app-votos-cnnb.onrender.com/api/votos/result-votos';
   try {
     // 2. Añade headers y configuración importante
     const res = await fetch(API_URL, {
@@ -63,7 +67,8 @@ export async function getServerSideProps() {
 }
 
 
-const ResultVotos = ({ votosCandidato, nameCandidatos }) => {
+
+const ResultVotos =  ({ votosCandidato, nameCandidatos }) => {
 
   const [chartData, setChartData] = useState(votosCandidato);
   const [chartLabels, setChartLabels] = useState(nameCandidatos);
@@ -71,7 +76,11 @@ const ResultVotos = ({ votosCandidato, nameCandidatos }) => {
 
    useEffect(() => {
       const fetchData = async () => {
-      const res = await fetch('http://localhost:5000/api/votos/result-votos');
+      /*   const URL = process.env.NODE_ENV === 'production'
+        ? 'https://app-votos-cnnb.onrender.com/api/votos/result-votos'
+        : 'http://localhost:5000/api/votos/result-votos'; */
+       const URL = 'https://app-votos-cnnb.onrender.com/api/votos/result-votos'; 
+      const res = await fetch(URL);
       const { votosCandidato, nameCandidatos } = await res.json();
       setChartData(votosCandidato);
       setChartLabels(nameCandidatos);    

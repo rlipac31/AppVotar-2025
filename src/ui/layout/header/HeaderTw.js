@@ -3,6 +3,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../../../../public/votos/vote.svg'
 import myFoto from  "../../../../public/votos/MIFOTO.png"
 import Image from 'next/image'
+import Link from 'next/link'
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
@@ -38,8 +39,8 @@ export default function HeaderTw() {
             </div>
           <div className="flex flex-1 items-center justify-end pr-6 sm:items-stretch sm:justify-start">
                 <div className="flex shrink-0 items-center">
-                
-                  <Image
+                <Link href={'/'}>
+                   <Image
                   alt={'App/votar'}
                   src={logo}
                   width={60}
@@ -47,6 +48,8 @@ export default function HeaderTw() {
                   sizes="(max-width: 768px) 2rem, (max-width: 1200px) 4rem" 
                   className="h-8 w-auto"
                   />
+                </Link>  
+                
                       
                 </div>
               <div className="hidden sm:ml-6 sm:block">
