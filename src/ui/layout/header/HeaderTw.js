@@ -53,7 +53,7 @@ export default function HeaderTw() {
                       
                 </div>
               <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-4  cursor-pointer">
                     {navigation.map((item) => (
                       <a
                         key={item.name}

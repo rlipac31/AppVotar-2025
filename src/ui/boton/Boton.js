@@ -5,7 +5,7 @@ const Boton = ({ texto, textColor, bgColor, size }) => {
     const styles = {
         color: textColor,
         backgroundColor: bgColor,
-        padding: size === 'small' ? '6px' : size === 'large' ? '12px' : '8px',
+        padding: size === 'small' ? '6px' : size === 'large' ? '14px' : '10px',
         borderRadius: '5px',
         textAlign: 'center',
         fontSize: size === 'small' ? '12px' : size === 'large' ? '20px' : '16px',

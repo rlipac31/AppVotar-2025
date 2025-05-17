@@ -16,7 +16,7 @@ const NavMenu = () => {
         alt={'logo-AppVotar'}
         sizes="(max-width: 768px) 2rem, (max-width: 1200px) 4rem" 
       />  
-      <nav>
+      <nav   className="cursor-pointer">
           <ul className={`${styles.menu__container__links}  ${montserrat.className}`}>
             <Link href={'/'}>Home</Link>
             <Link href={'/candidatos'}>Candidatos</Link>
@@ -24,6 +24,7 @@ const NavMenu = () => {
             <Link href={'#'}> 
             
                     <Boton
+                  
                         texto={"Login"}
                         textColor={"#ffffff"}
                         bgColor={'var(--primary-color)'}

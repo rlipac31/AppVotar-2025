@@ -49,7 +49,7 @@ const CardCandidato = ({candidato}) => {
                 href={`/candidato/${_id}`} 
              >
               <Boton
-                texto={'mas info'}
+                texto={'votar'}
                 textColor={'#ffffff'} 
                 bgColor={ 'var(--primary-color)'}
                 size={'medium'}
