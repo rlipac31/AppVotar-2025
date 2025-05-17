@@ -76,9 +76,11 @@ export default function Candidato({ candidatoId }) {
                       </div>
                 </div>
                 <div className={`${styles2.container__candidato__info__reseña} ${roboto.className}`}>
-                  <p><strong> Reseña Biografica: </strong> {biography.resumenBio}</p>
+                  <p><strong> Reseña Biografica: </strong> {biography.resumenBio}...</p>
                  
-                  <Link  href={biography.link_wiki}>saber mas</Link>
+                  <Link  href={biography.link_wiki} target="_blank"
+                  className="text-blue-700 font-medium hover:text-blue-900 hover:font-bold"
+                  >saber mas</Link>
                 </div>
 
               </div>
