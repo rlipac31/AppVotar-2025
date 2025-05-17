@@ -35,7 +35,7 @@ export default function Home() {
                       <Link href={'/candidatos'}>
                         <button
                           
-                          className=" my-2 bg-blue-700 hover:bg-blue-800 text-xl text-white font-semibold py-2 px-4 rounded-xl shadow-md transition duration-300 cursor-pointer"
+                          className=" my-2 bg-blue-700 hover:bg-blue-800 text-xl text-white font-semibold py-2 px-8 rounded-xl shadow-md transition duration-300 cursor-pointer"
                         >Vota ya</button>
                       </Link>
                        
