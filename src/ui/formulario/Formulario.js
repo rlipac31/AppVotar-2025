@@ -122,9 +122,6 @@ const Formulario = () => {
                 </select>
             </div>
 
-            {/* <Boton>
-                 <button type="submit">Guardar</button>
-             </Boton> */}
             <Boton
                 type={'submit'}
                 texto={'votar'}
