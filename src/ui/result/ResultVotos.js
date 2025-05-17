@@ -39,7 +39,7 @@ export async function getServerSideProps() {
       };
     }
 
-    // 4. Procesamiento de datos seguro
+    // 4. Procesamiento de datos seguro 
     const data = await res.json();
 
     if (!data.votosCandidato) {

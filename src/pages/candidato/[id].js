@@ -7,7 +7,7 @@ import Formulario from '../../ui/formulario/Formulario';
 import NavMenu from '../../ui/layout/menu/NavMenu';
 import HeaderTw from '../../ui/layout/header/HeaderTw';
 import Link from 'next/link';
-import Footer from '../../ui/layout/footer/Footer';
+import Footertw from '../../ui/layout/footer/Footertw';
 import { montserrat, roboto } from '../../lib/fonts'
 export async function getServerSideProps(context) {
   const { id } = context.params;
@@ -65,11 +65,10 @@ export default function Candidato({ candidatoId }) {
                                 {surname.paternal} {surname.maternal}</p>
                             </div>
                             <div className={styles2.info__datos__container__partido}>                       
-                              
                                   <Image
                                     src={political_party.imgeUrl}
-                                    width={170}
-                                    height={170}
+                                    width={150}
+                                    height={150}
                                     alt={`imagen Partido candidato`}
                                   />
                                   <p>Partido Politico: {political_party.name}</p>
@@ -91,7 +90,8 @@ export default function Candidato({ candidatoId }) {
 
         }
         
-          <Footer/>
+          {/*  <Footer/> */}
+           <Footertw/>
       </div>
 
     )

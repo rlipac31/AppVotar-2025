@@ -22,15 +22,19 @@
 }
 
 .info__datos__container{
+
   padding: 1rem;
   min-width: 30%;
-  max-width: 50%;
+  max-width:50%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
+ 
 }
 .info__datos__container__names{
+    
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -41,12 +45,11 @@
   font-style: italic;
 }
 .container__candidato__info{
-
   padding-left: 0.0rem;
   display: flex;
   flex-direction: column;
   width: 58vw;
- 
+  gap: 2rem;
 }
 
 .container__candidato__info__reseña{
@@ -60,8 +63,8 @@ font-style: oblique;
 }
 .container__candidato__info__image{
   border-radius:0.3rem;
-  max-width: 40%;
-  min-width: 40%;
+  max-width: 50%;
+  min-width: 50%;
   min-height:60vh;
   max-height: auto;
 }
@@ -76,10 +79,15 @@ font-style: oblique;
 .info__datos__container img {
   border-radius: 0.6rem;
 }
+.info__datos__container__partido{
+  margin-top: -1rem;
+    
+}
 .info__datos__container__partido p{
   margin: 1rem 0rem;
   font-family: var(--primary-font);
   font-weight: 600;
+  font-size: 1.1rem;
   color: var(--secundary-color);
 }
 

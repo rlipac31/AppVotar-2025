@@ -17,6 +17,7 @@ const Formulario = () => {
 
     const [seVoto, setSeVoto] = useState(false);// se gurado el voto correctamente
     const [errorVoto, setErrorVoto] = useState(false);
+    const [errors, setErrors] = useState([]);
 
     const [localidad, setLocalidad] = useState('');
     const [identity, setIdentity] = useState('');
@@ -28,7 +29,7 @@ const Formulario = () => {
         setErrorVoto(false);
     }
 
-    const handleSubmit = async (e) => {
+/*     const handleSubmit = async (e) => {
         setIdentity('');
         setLocalidad('');
         setTimeout(() => {
@@ -54,7 +55,7 @@ const Formulario = () => {
                 console.log(' erorr desde next: ');
                 setSeVoto(false);
                 setErrorVoto(true);
-                return seVoto, setErrorVoto;
+                return seVoto, setErrorVoto,  errors;
 
             } else {
                 console.log('se voto correctamente:', votacion);
@@ -66,9 +67,69 @@ const Formulario = () => {
 
         } catch (error) {
             console.error('Error:', error);
+              setErrors(error)
 
         }
+    }; */
+    const handleSubmit = async (e) => {
+    e.preventDefault(); // Siempre primero
+
+    setIdentity('');
+    setLocalidad('');
+    setTimeout(() => {
+        resetFormulario();
+    }, 1500);
+
+    const data = {
+        identity: identity,
+        localidad: localidad
     };
+
+    try {
+        const URL = `https://app-votos-cnnb.onrender.com/api/votos/${id}`; // producción
+        const res = await fetch(URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+
+        const responseBody = await res.json();
+
+        if (!res.ok) {
+            // Aquí capturas errores del servidor
+            console.error('❌ Error del servidor:', responseBody);
+            setSeVoto(false);
+            setErrorVoto(true);
+            setErrors(responseBody.errors.msg || responseBody.msg || 'Error inesperado');
+            return;
+        }
+
+        const { votacion } = responseBody;
+
+        if (!votacion) {
+            console.error('❌ Respuesta sin votación:', responseBody);
+            setSeVoto(false);
+            setErrorVoto(true);
+            setErrors('No se registró el voto');
+            return;
+        }
+
+        // Éxito
+        console.log('✅ Se votó correctamente:', votacion);
+        setErrorVoto(false);
+        setSeVoto(true);
+        setErrors(null);
+
+    } catch (error) {
+        console.error('❌ Error de red o sistema:', error);
+        setErrorVoto(true);
+        setErrors(errors || 'Fallo en la conexión');
+      
+    }
+};
+
 
     return (
         <form onSubmit={handleSubmit} className={styles.form__container}>
@@ -82,13 +143,18 @@ const Formulario = () => {
                         size={'small'}
                     />
                 ) : errorVoto
-                    ? (
+                    ?
+                     (
+               
+                      
                         <Alert
-                            message={'hubo un Error y no se guardo en la BD'}
+                            message={errors}
                             bgColor={'rgb(248, 167, 167)'}
                             textColor={'rgb(105, 28, 28)'}
                             size={'medium'}
-                        />
+                        /> 
+                           
+                        
                     ) :
                     <h3>Realiza tu Voto</h3>
             }

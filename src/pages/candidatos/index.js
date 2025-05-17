@@ -7,7 +7,7 @@ import useCandidato from "../../hooks/useCandidato";
 import CardCandidato from "../../ui/candidato/cardCandidato";
 import NavMenu from "../../ui/layout/menu/NavMenu";
 import HeaderTw from "../../ui/layout/header/HeaderTw";
-import Footer from "../../ui/layout/footer/Footer";
+import Footertw from "../../ui/layout/footer/Footertw";
 
 
 //
@@ -39,7 +39,8 @@ const candidatos = useCandidato();
                 </div>
 
               </div>
-              <Footer/>
+                {/*  <Footer/> */}
+              <Footertw/>
          </div>
     </>
   );
