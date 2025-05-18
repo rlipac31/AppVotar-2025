@@ -78,7 +78,7 @@ const Formulario = () => {
     setLocalidad('');
     setTimeout(() => {
         resetFormulario();
-    }, 1500);
+    }, 3000);
 
     const data = {
         identity: identity,
@@ -148,7 +148,7 @@ const Formulario = () => {
                
                       
                         <Alert
-                            message={errors}
+                            message={"DNI no validdo o Ya Voto " || errors}
                             bgColor={'rgb(248, 167, 167)'}
                             textColor={'rgb(105, 28, 28)'}
                             size={'medium'}
