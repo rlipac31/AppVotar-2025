@@ -48,8 +48,9 @@ export default function HeaderTw() {
                   sizes="(max-width: 768px) 2rem, (max-width: 1200px) 4rem" 
                   className="h-8 w-auto"
                   />
+                 
                 </Link>  
-                
+                  <span className='mx-2 text-xl text-white font-medium'>AppVotar</span>
                       
                 </div>
               <div className="hidden sm:ml-6 sm:block">
