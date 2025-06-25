@@ -13,11 +13,7 @@ const navigation = [
   { name: 'About', href: '#', current: false },
 ]
 
-{/* <li className={style.menu__links__link}> <Link href={'/'}>Home</Link></li>
-<li className={style.menu__links__link}> <Link href={'#'}>Resultados</Link></li>
-<li className={style.menu__links__link}> <Link href={'/candidatos'}>Candidatos</Link></li>
-<li className={style.menu__links__link}> <Link href={'#como-funciona'}>Como funciona</Link></li>
-<li className={style.menu__links__link}> <Link href={'#'}>About</Link></li> */}
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -32,7 +28,7 @@ export default function HeaderTw() {
               {/* Mobile menu button*/}
               <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
                 <span className="absolute -inset-0.5" />
-                <span className="sr-only">Open main menu</span>
+                <span className="sr-only bg-red-500">Open main menu</span>
                 <Bars3Icon aria-hidden="true" className="block size-6   group-data-open:hidden" />
                 <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-open:block" />
               </DisclosureButton>
@@ -57,6 +53,7 @@ export default function HeaderTw() {
                   <div className="flex space-x-4  cursor-pointer">
                     {navigation.map((item) => (
                       <a
+                    
                         key={item.name}
                         href={item.href}
                         aria-current={item.current ? 'page' : undefined}

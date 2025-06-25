@@ -18,11 +18,11 @@
 
   /*  probar */
 }
-.card:hover{
-  transform: translateY(-10px) scale(1.05);
+/* .card:hover{
+  transform: translateY(-2px) scale(1.01);
   box-shadow:  0 8px 12px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-}
+} */
 .card__image{
   border-radius: 3px;
   object-fit: cover;
@@ -92,6 +92,7 @@
   transition: 0.3s;
   margin-bottom: 1rem;
   text-decoration: none;
+  cursor: pointer;
 }
 @media (max-width: 1200px) {
   .card{

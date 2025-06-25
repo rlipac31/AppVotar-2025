@@ -32,7 +32,7 @@ export default function Home() {
                         Solo contamos lo que de verdad piensa el país.
                         Sin manipulación, sin filtros, solo tu opinión real.
                         Tus datos no se almacenan ni se comparten. Solo tu voz construye el resultado</p>
-                      <Link href={'/candidatos'}target="_blank">
+                      <Link href={'/candidatos'}>
                         <button
                           
                           className=" my-2 bg-blue-700 hover:bg-blue-800 text-xl text-white font-semibold py-2 px-8 rounded-xl shadow-md transition duration-300 cursor-pointer"

@@ -17,15 +17,20 @@ export async function getServerSideProps(context) {
   const res = await fetch(`https://app-votos-cnnb.onrender.com/api/candidatos/${id}`);
 
   const { candidato } = await res.json();
+  
   const candidatoId = candidato;
   if (!candidatoId) {
     return { notFound: true };
   }
 
-  return {
 
+     return {
+      
     props: { candidatoId }
   };
+  
+
+ 
 }
 
 export default function Candidato({ candidatoId }) {
@@ -42,13 +47,30 @@ export default function Candidato({ candidatoId }) {
         <Sidebar />
        
         {
-          !candidatoId ? <p>No ahy canddidato</p>
+          !candidatoId ? 
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                  <div class="size-40 w-60 bg-gray-200 mx-auto"></div>
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2"></div>
+                    <div class="col-span-1 h-2 rounded bg-gray-200"></div>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
+                    <div class="space-y-3">
+                      <div class="grid grid-cols-3 gap-2">
+                        <div class="col-span-2 h-2 rounded bg-gray-200"></div>
+                        <div class="col-span-1 h-2 rounded bg-gray-200"></div>
+                      </div>
+                      <div class="h-2 rounded bg-gray-200"></div>
+                    </div>
+                  </div>
+                </div>  
             :
             <div className={styles2.container__candidato}>
 
               <div className={styles2.container__candidato__info}>
                 <div className={styles2.container__candidato__info__datos}>
-                  <Image
+                { imagen ? 
+                <Image
                     className={styles2.container__candidato__info__image}
                     src={imagen.url}
                     width={200}
@@ -56,7 +78,8 @@ export default function Candidato({ candidatoId }) {
                     alt={imagen.alt}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
 
-                  />
+                  /> :<div class="size-40 w-60 bg-gray-200 mx-auto"></div> }
+                  
                       <div className={styles2.info__datos__container}>
                            <div className={styles2.info__datos__container__names}>
                               <p>Nombres:<br></br>

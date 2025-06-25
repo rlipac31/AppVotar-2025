@@ -45,13 +45,14 @@ const CardCandidato = ({candidato}) => {
             </div>
 
             <Link
-                className={styles.card__article__enlace}              
+                className={` bg-slate-800  hover:bg-slate-950 transition duration-300 px-4 ${styles.card__article__enlace}`}              
                 href={`/candidato/${_id}`} 
              >
               <Boton
+               
                 texto={'votar'}
                 textColor={'#ffffff'} 
-                bgColor={ 'var(--primary-color)'}
+                /* bgColor={ 'var(--primary-color)'} */
                 size={'medium'}
               />
 

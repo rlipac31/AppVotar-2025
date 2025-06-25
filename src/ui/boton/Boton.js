@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 const Boton = ({ texto, textColor, bgColor, size }) => {
     const styles = {
         color: textColor,
@@ -9,6 +10,7 @@ const Boton = ({ texto, textColor, bgColor, size }) => {
         borderRadius: '5px',
         textAlign: 'center',
         fontSize: size === 'small' ? '12px' : size === 'large' ? '20px' : '16px',
+        
     };
 
     return (
