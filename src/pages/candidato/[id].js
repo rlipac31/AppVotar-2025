@@ -17,20 +17,20 @@ export async function getServerSideProps(context) {
   const res = await fetch(`https://app-votos-cnnb.onrender.com/api/candidatos/${id}`);
 
   const { candidato } = await res.json();
-  
+
   const candidatoId = candidato;
   if (!candidatoId) {
     return { notFound: true };
   }
 
 
-     return {
-      
+  return {
+
     props: { candidatoId }
   };
-  
 
- 
+
+
 }
 
 export default function Candidato({ candidatoId }) {
@@ -40,69 +40,69 @@ export default function Candidato({ candidatoId }) {
     //const { url } = imagen;
     return (
       <div className={styles.main}>
-         <div className={styles.header__movile}>
-        {/*   <NavMenu /> */}
+        <div className={styles.header__movile}>
+          {/*   <NavMenu /> */}
           <HeaderTw />
         </div>
         <Sidebar />
-       
+
         {
-          !candidatoId ? 
-                  <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                  <div class="size-40 w-60 bg-gray-200 mx-auto"></div>
-                  <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2"></div>
-                    <div class="col-span-1 h-2 rounded bg-gray-200"></div>
+          !candidatoId ?
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <div className="size-40 w-60 bg-gray-200 mx-auto"></div>
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2"></div>
+                <div className="col-span-1 h-2 rounded bg-gray-200"></div>
+              </div>
+              <div className="px-6 pt-4 pb-2">
+                <div className="space-y-3">
+                  <div className="grid grid-cols-3 gap-2">
+                    <div className="col-span-2 h-2 rounded bg-gray-200"></div>
+                    <div className="col-span-1 h-2 rounded bg-gray-200"></div>
                   </div>
-                  <div class="px-6 pt-4 pb-2">
-                    <div class="space-y-3">
-                      <div class="grid grid-cols-3 gap-2">
-                        <div class="col-span-2 h-2 rounded bg-gray-200"></div>
-                        <div class="col-span-1 h-2 rounded bg-gray-200"></div>
-                      </div>
-                      <div class="h-2 rounded bg-gray-200"></div>
-                    </div>
-                  </div>
-                </div>  
+                  <div className="h-2 rounded bg-gray-200"></div>
+                </div>
+              </div>
+            </div>
             :
             <div className={styles2.container__candidato}>
 
               <div className={styles2.container__candidato__info}>
                 <div className={styles2.container__candidato__info__datos}>
-                { imagen ? 
-                <Image
-                    className={styles2.container__candidato__info__image}
-                    src={imagen.url}
-                    width={200}
-                    height={300}
-                    alt={imagen.alt}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                  {imagen ?
+                    <Image
+                      className={styles2.container__candidato__info__image}
+                      src={imagen.url}
+                      width={200}
+                      height={300}
+                      alt={imagen.alt}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
 
-                  /> :<div class="size-40 w-60 bg-gray-200 mx-auto"></div> }
-                  
-                      <div className={styles2.info__datos__container}>
-                           <div className={styles2.info__datos__container__names}>
-                              <p>Nombres:<br></br>
-                              {nameCandidato.firstName} {nameCandidato.lastName}</p>
-                              <p>Apellidos:<br></br> 
-                                {surname.paternal} {surname.maternal}</p>
-                            </div>
-                            <div className={styles2.info__datos__container__partido}>                       
-                                  <Image
-                                    src={political_party.imgeUrl}
-                                    width={150}
-                                    height={150}
-                                    alt={`imagen Partido candidato`}
-                                  />
-                                  <p>Partido Politico: {political_party.name}</p>
-                            </div>
-                      </div>
+                    /> : <div className="size-40 w-60 bg-gray-200 mx-auto"></div>}
+
+                  <div className={styles2.info__datos__container}>
+                    <div className={styles2.info__datos__container__names}>
+                      <p>Nombres:<br></br>
+                        {nameCandidato.firstName} {nameCandidato.lastName}</p>
+                      <p>Apellidos:<br></br>
+                        {surname.paternal} {surname.maternal}</p>
+                    </div>
+                    <div className={styles2.info__datos__container__partido}>
+                      <Image
+                        src={political_party.imgeUrl}
+                        width={150}
+                        height={150}
+                        alt={`imagen Partido candidato`}
+                      />
+                      <p>Partido Politico: {political_party.name}</p>
+                    </div>
+                  </div>
                 </div>
                 <div className={`${styles2.container__candidato__info__reseña} ${roboto.className}`}>
                   <p><strong> Reseña Biografica: </strong> {biography.resumenBio}...</p>
-                 
-                  <Link  href={biography.link_wiki} target="_blank"
-                  className="text-blue-700 font-medium hover:text-blue-900 hover:font-bold"
+
+                  <Link href={biography.link_wiki} target="_blank"
+                    className="text-blue-700 font-medium hover:text-blue-900 hover:font-bold"
                   >saber mas</Link>
                 </div>
 
@@ -110,13 +110,13 @@ export default function Candidato({ candidatoId }) {
               <div className={styles2.container__candidato__formulario}>
                 <Formulario />
               </div>
-           
+
             </div>
 
         }
-        
-          {/*  <Footer/> */}
-           <Footertw/>
+
+        {/*  <Footer/> */}
+        <Footertw />
       </div>
 
     )

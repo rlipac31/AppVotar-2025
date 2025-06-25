@@ -21,7 +21,7 @@ const [miCandidatos, setMiCandidatos] = useState([]); // Inicializa con un array
     // Al montar el componente, carga los datos locales inmediatamente
     setTimeout(() => {
            setMiCandidatos(dataCandidatos);
-    console.log('Candidatos Locales Cargados:', dataCandidatos);
+   // console.log('Candidatos Locales Cargados:', dataCandidatos);
     }, 500);
  
   }, []); // El array vacío asegura que esto se ejecute solo una vez al montar
@@ -32,14 +32,13 @@ const [miCandidatos, setMiCandidatos] = useState([]); // Inicializa con un array
       if (loading && !error && candidatos) {
         setTimeout(() => {
       setMiCandidatos(candidatos);
-      console.log('Candidatos de API Cargados:', candidatos);
+    //  console.log('Candidatos de API Cargados:', candidatos);
        }, 1000);
     }
    
     
   }, [candidatos, loading, error]); // Se ejecuta cuando cambian candidatosAPI, loading o error
 
-  console.log('miCandidatos (render)data///:', dataCandidatos);
 
   // Muestra el esqueleto de carga si no hay datos en miCandidatos
   // y si la API aún está cargando o si hay un error y no se cargaron los datos locales inicialmente
@@ -79,19 +78,19 @@ const [miCandidatos, setMiCandidatos] = useState([]); // Inicializa con un array
               // Si quieres un esqueleto por cada dataCandidato, entonces:
               dataCandidatos.map((candidato, index) => (
               
-                  <div key={candidato._id || index}class="max-w-sm rounded overflow-hidden shadow-lg">
-                  <div class="size-40 w-60 bg-gray-200 mx-auto"></div>
-                  <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2"></div>
-                    <div class="col-span-1 h-2 rounded bg-gray-200"></div>
+                  <div key={candidato._id || index}className="max-w-sm rounded overflow-hidden shadow-lg">
+                  <div className="size-40 w-60 bg-gray-200 mx-auto"></div>
+                  <div className="px-6 py-4">
+                    <div className="font-bold text-xl mb-2"></div>
+                    <div className="col-span-1 h-2 rounded bg-gray-200"></div>
                   </div>
-                  <div class="px-6 pt-4 pb-2">
-                    <div class="space-y-3">
-                      <div class="grid grid-cols-3 gap-2">
-                        <div class="col-span-2 h-2 rounded bg-gray-200"></div>
-                        <div class="col-span-1 h-2 rounded bg-gray-200"></div>
+                  <div className="px-6 pt-4 pb-2">
+                    <div className="space-y-3">
+                      <div className="grid grid-cols-3 gap-2">
+                        <div className="col-span-2 h-2 rounded bg-gray-200"></div>
+                        <div className="col-span-1 h-2 rounded bg-gray-200"></div>
                       </div>
-                      <div class="h-2 rounded bg-gray-200"></div>
+                      <div className="h-2 rounded bg-gray-200"></div>
                     </div>
                   </div>
                 </div>  
