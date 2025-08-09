@@ -1,4 +1,4 @@
-### AppVotar es una plataforma en línea independiente que busca medir las intenciones de voto para las elecciones presidenciales de Perú en 2026, como alternativa a las encuestadoras tradicionales, cuyos datos suelen estar influenciados por intereses políticos y económicos.
+## AppVotar es una plataforma en línea independiente que busca medir las intenciones de voto para las elecciones presidenciales de Perú en 2026, como alternativa a las encuestadoras tradicionales, cuyos datos suelen estar influenciados por intereses políticos y económicos.
 
 Características principales:
 
