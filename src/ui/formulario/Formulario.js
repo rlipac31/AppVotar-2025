@@ -86,7 +86,8 @@ const Formulario = () => {
     };
 
     try {
-        const URL = `https://app-votos-cnnb.onrender.com/api/votos/${id}`; // producción
+       // const URL = `https://app-votos-cnnb.onrender.com/api/votos/${id}`; // producción
+       const URL =`${process.env.NEXT_PUBLIC_API_URL}/votos/${id}`; // producción NEXT_PUBLIC_API_URL}
         const res = await fetch(URL, {
             method: 'POST',
             headers: {
