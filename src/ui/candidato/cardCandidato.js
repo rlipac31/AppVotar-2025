@@ -14,7 +14,7 @@ import ReactMarkdown from "react-markdown";
 
 
 
-import { infoCandidato } from '../../utils/consultaIA'
+import { infoCandidato, countTokens } from '../../utils/consultaIA'
 const CardCandidato = ({ candidato }) => {
   const { nameCandidato, surname, imagen, political_party, biography, _id } = candidato;
   const { url } = imagen;
@@ -29,7 +29,6 @@ const CardCandidato = ({ candidato }) => {
      // const claveSecreta = "MelitonCarvala-#@$"
       console.log('mi palabra secreta:', claveSecreta)
       const prompt = `hola puedes operar como un agente informativo sobre candidatos a la presidencia del Peru para este 2026.
-
       Reglas:
       1.  El usuario te pasará una clave secreta primero. La clave es ${claveSecreta}.
       2.  Si la clave proporcionada **NO** es ${claveSecreta} o está ausente, debes responder con el siguiente texto exacto: "Palabra secreta incorrecta".
@@ -37,7 +36,7 @@ const CardCandidato = ({ candidato }) => {
       4.  Tu tarea es responder con información resumida y relevante sobre el candidato, incluyendo:
           -   Logros (académicos, empresariales, sociales, etc.).
           -   Cuestionamientos políticos, denuncias o sospechas de corrupción. En este punto, debes citar reportajes o publicaciones que respalden dichas afirmaciones.
-
+      5. Debes citas las fuentes como videos de youtube o publicaciones en diarios, todo debe ser informativoparaque el elector este informado
       ---
 
      Ahora, estoy listo para recibir la clave y el nombre del candidato.
@@ -45,10 +44,26 @@ const CardCandidato = ({ candidato }) => {
      Clave secreta: ${claveSecreta}
      
      Nombre del candidato:${nameCandidato.firstName} ${nameCandidato.lastName} ${surname.paternal}`
-       setOpen(true); // 👈 Abre el modal
+       const  nunTokens =  await countTokens(prompt) ;
+     
+       console.log("Numero de token cliente: ", nunTokens)
+      if (typeof nunTokens !== "number") {
+        console.warn("El conteo de nunTokens no es un número válido:", nunTokens);
+        setRespuestaIA("❌ Error interno al contar nunTokens. Intenta nuevamente.");
+        return;
+      } 
+
+        if (nunTokens > 280) {
+       setOpen(true)
+        setRespuestaIA("⚠️ El número de tokens excede lo proyectado para esta función. Por favor, reduce el texto o simplifica los datos del candidato.");
+        return;
+      }
+
+      setOpen(true); // 👈 Abre el modal
       const texto = await infoCandidato(prompt);
       setRespuestaIA(texto);
-     
+
+ 
     } catch (error) {
       console.error("Error al consultar IA:", error);
     }
@@ -149,19 +164,19 @@ const CardCandidato = ({ candidato }) => {
                                    {/*  <ReactMarkdown>{respuestaIA}</ReactMarkdown> */}
                                          {/* Renderiza la respuesta con estilos */}
                                     {!respuestaIA && (
-                                        <div class="mx-auto w-full max-w-sm rounded-md  p-4">
-                                          <div class="flex animate-pulse space-x-4">
+                                        <div className="mx-auto w-full max-w-sm rounded-md  p-4">
+                                          <div className="flex animate-pulse space-x-4">
                                            
-                                            <div class="flex-1 space-y-6 py-1">
+                                            <div className="flex-1 space-y-6 py-1">
                                               <div className='text-gray-300 text-xl'>
                                            <RiGeminiFill className='text-xl text-blue-600' /> cargando....</div>
-                                              <div class="h-2 rounded bg-gray-200"></div>
-                                              <div class="space-y-3">
-                                                <div class="grid grid-cols-3 gap-4">
-                                                  <div class="col-span-2 h-2 rounded bg-gray-200"></div>
-                                                  <div class="col-span-1 h-2 rounded bg-gray-200"></div>
+                                              <div className="h-2 rounded bg-gray-200"></div>
+                                              <div className="space-y-3">
+                                                <div className="grid grid-cols-3 gap-4">
+                                                  <div className="col-span-2 h-2 rounded bg-gray-200"></div>
+                                                  <div className="col-span-1 h-2 rounded bg-gray-200"></div>
                                                 </div>
-                                                <div class="h-2 rounded bg-gray-200"></div>
+                                                <div className="h-2 rounded bg-gray-200"></div>
                                               </div>
                                             </div>
                                           </div>
