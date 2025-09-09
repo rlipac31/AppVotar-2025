@@ -36,7 +36,6 @@ const CardCandidato = ({ candidato }) => {
       4.  Tu tarea es responder con información resumida y relevante sobre el candidato, incluyendo:
           -   Logros (académicos, empresariales, sociales, etc.).
           -   Cuestionamientos políticos, denuncias o sospechas de corrupción. En este punto, debes citar reportajes o publicaciones que respalden dichas afirmaciones.
-      5. Debes citas las fuentes como videos de youtube o publicaciones en diarios, todo debe ser informativoparaque el elector este informado
       ---
 
      Ahora, estoy listo para recibir la clave y el nombre del candidato.
