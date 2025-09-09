@@ -96,13 +96,13 @@ const CardCandidato = ({ candidato }) => {
 
                 width={40}
                 height={40}
-                alt={`imagen Partido candidato`}
+                alt="{imagen Partido candidato}"
                 sizes="(max-width: 768px) 3rem, (max-width: 1200px) 4rem"
               />
               : null}
 
           </div>
-          <div className='flex flex-row  w-full gap-2 justify-around'>
+          <div className='flex flex-row  w-full gap-2 justify-around md:px-2'>
             <Link
               className={` bg-slate-800  hover:bg-slate-950 transition duration-300 px-4 ${styles.card__article__enlace}`}
               href={`/candidato/${_id}`}
@@ -114,7 +114,7 @@ const CardCandidato = ({ candidato }) => {
                 size={'medium'}
               />
             </Link>
-            <button className=" w-full h-11  text-indigo-700  border-2 border-indigo-700 hover:border-indigo-800 
+            <button className=" w-2/5 md:w-full h-11  text-indigo-700  border-2 border-indigo-700 hover:border-indigo-800 
             hover:bg-indigo-50  rounded-md flex flex-row text-center justify-around items-center"
               onClick={handleClick}
             ><strong className=' text-sm'>Info IA</strong> <RiGeminiFill className='text-xl' />
@@ -154,6 +154,8 @@ const CardCandidato = ({ candidato }) => {
                                     width={200}
                                     height={150}
                                     className='mx-auto mb-2 rounded-sm'
+                                    alt={nameCandidato}
+                                    sizes="(max-width: 768px) 3rem, (max-width: 1200px) 4rem"
                                   />
                               <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                               
