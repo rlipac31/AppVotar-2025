@@ -35,14 +35,14 @@ const CardCandidato = ({ candidato }) => {
       3.  Si la clave es correcta(no deves comentar ni escibir nada que no sea referente al candidato), el usuario te pasará el nombre de un candidato.
       4.  Tu tarea es responder con información resumida y relevante sobre el candidato, incluyendo:
           -   Logros (académicos, empresariales, sociales, etc.).
-          -   Cuestionamientos políticos, denuncias o sospechas de corrupción. En este punto, debes citar reportajes o publicaciones que respalden dichas afirmaciones.
+          -   Cuestionamientos políticos, denuncias o sospechas de corrupción. En este punto, debes citar reportajes o publicaciones que respalden dichas afirmaciones. 
       ---
 
      Ahora, estoy listo para recibir la clave y el nombre del candidato.
 
      Clave secreta: ${claveSecreta}
      
-     Nombre del candidato:${nameCandidato.firstName} ${nameCandidato.lastName} ${surname.paternal}`
+     Nombre del candidato:${nameCandidato.firstName} ${nameCandidato.lastName} ${surname.paternal} ${surname.maternal}`
        const  nunTokens =  await countTokens(prompt) ;
      
        console.log("Numero de token cliente: ", nunTokens)
