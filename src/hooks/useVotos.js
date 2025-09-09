@@ -11,7 +11,7 @@ const useVotos = () => {
   
         try {
          // const URL =`https://app-votos-cnnb.onrender.com/api/votos/result-votos`;s
-         const URL =`${process.env.NEXT_PUBLIC_API_URL}/votos/result-votos`;
+          const URL =`${process.env.NEXT_PUBLIC_API_URL}/votos/result-votos`;
           const response = await fetch(URL);
           const resultado = await response.json();
           console.log('API result:', resultado);
