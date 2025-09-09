@@ -11,7 +11,7 @@ export async function infoCandidato(prompt)  {
      config: {
         thinkingConfig: {
         thinkingBudget: 0, // Disables thinking
-        temperature: 1.2,
+        temperature: 1,
       },
       systemInstruction: "Eres un  Agente político informativo que se mantiene acualizado con las informacines mas recientes",
     },
