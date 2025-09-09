@@ -9,11 +9,8 @@ export async function infoCandidato(prompt)  {
     model: "gemini-2.5-flash",
     contents: prompt,
      config: {
-        thinkingConfig: {
-        thinkingBudget: 0, // Disables thinking
-        temperature: 1,
-      },
-      systemInstruction: "Eres un  Agente político informativo que se mantiene acualizado con las informacines mas recientes",
+      
+      systemInstruction: "Eres un agente político informativo ",
     },
   });
 //  console.log(response.text);

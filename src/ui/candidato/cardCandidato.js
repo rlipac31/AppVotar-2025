@@ -26,8 +26,7 @@ const CardCandidato = ({ candidato }) => {
   const handleClick = async () => {
     try {
         const claveSecreta =process.env.NEXT_PUBLIC_MI_PALABRA_SECRETA_PROMPT;
-     // const claveSecreta = "MelitonCarvala-#@$"
-      console.log('mi palabra secreta:', claveSecreta)
+    //  console.log('mi palabra secreta:', claveSecreta)
       const prompt = `hola puedes operar como un agente informativo sobre candidatos a la presidencia del Peru para este 2026.
       Reglas:
       1.  El usuario te pasará una clave secreta primero. La clave es ${claveSecreta}.
