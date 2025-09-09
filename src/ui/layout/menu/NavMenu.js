@@ -20,7 +20,7 @@ const NavMenu = () => {
           <ul className={`${styles.menu__container__links}  ${montserrat.className}`}>
             <Link href={'/'}>Home</Link>
             <Link href={'/candidatos'}>Candidatos</Link>
-            <Link href={'#'}>Resultados</Link>
+            <Link href={'/#resultados'}>Resultados</Link>
             <Link href={'#'}> 
             
                     <Boton
