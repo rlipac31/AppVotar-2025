@@ -93,16 +93,15 @@ const CardCandidato = ({ candidato }) => {
             {political_party.imgeUrl ?
               <Image
                 src={political_party.imgeUrl}
-
                 width={40}
                 height={40}
-                alt="{imagen Partido candidato}"
+                alt={`imagen Partido candidato`}
                 sizes="(max-width: 768px) 3rem, (max-width: 1200px) 4rem"
               />
               : null}
 
           </div>
-          <div className='flex flex-row  w-full gap-2 justify-around md:px-2'>
+          <div className='flex flex-row  w-full gap-2 justify-around px-2'>
             <Link
               className={` bg-slate-800  hover:bg-slate-950 transition duration-300 px-4 ${styles.card__article__enlace}`}
               href={`/candidato/${_id}`}

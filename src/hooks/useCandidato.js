@@ -16,8 +16,8 @@ const useCandidato = () => {
     const loadCandidato= async()=>{
     
       try {
-        const URL = `https://app-votos-cnnb.onrender.com/api/candidatos/`;
-      //  const URL =`${process.env.NEXT_PUBLIC_API_URL}/candidatos/`;
+      //  const URL = `https://app-votos-cnnb.onrender.com/api/candidatos/`;
+        const URL =`${process.env.SERVER_API_BASE_URL}/candidatos/`;
         const response = await fetch(URL);
         const resultado = await response.json();
        // console.log('API result fuera :', resultado);
