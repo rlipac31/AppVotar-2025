@@ -17,15 +17,15 @@ const useCandidato = () => {
     
       try {
       //  const URL = `https://app-votos-cnnb.onrender.com/api/candidatos/`;
-        const URL =`${process.env.SERVER_API_BASE_URL}/candidatos/`;
+        const URL =`${process.env.NEXT_PUBLIC_API_URL}/candidatos/`;
         const response = await fetch(URL);
         const resultado = await response.json();
-       // console.log('API result fuera :', resultado);
+        console.log('API result fuera :', resultado);
         setCandidatos(resultado.candidatos)
         if(candidatos){
            setLoading(false);
         }
-      //  console.log('candidatos :', resultado);
+        console.log('candidatos resulat :', resultado);
       } catch (error) {
            setError(error);
         return console.log('hubo un Error tipo:',error);

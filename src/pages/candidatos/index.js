@@ -21,7 +21,7 @@ const [miCandidatos, setMiCandidatos] = useState([]); // Inicializa con un array
     // Al montar el componente, carga los datos locales inmediatamente
     setTimeout(() => {
            setMiCandidatos(dataCandidatos);
-   // console.log('Candidatos Locales Cargados:', dataCandidatos);
+    console.log('Candidatos Locales Cargados:', dataCandidatos);
     }, 500);
  
   }, []); // El array vacío asegura que esto se ejecute solo una vez al montar
@@ -32,7 +32,7 @@ const [miCandidatos, setMiCandidatos] = useState([]); // Inicializa con un array
       if (loading && !error && candidatos) {
         setTimeout(() => {
       setMiCandidatos(candidatos);
-    //  console.log('Candidatos de API Cargados:', candidatos);
+      console.log('Candidatos de API Cargados:', candidatos);
        }, 1000);
     }
    

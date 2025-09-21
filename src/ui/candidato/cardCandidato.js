@@ -113,8 +113,10 @@ const CardCandidato = ({ candidato }) => {
                 size={'medium'}
               />
             </Link>
+            {/* btoon escondido por motivo no hay presupuesto para el plan de gemini */}
             <button className=" w-2/5 md:w-full h-11  text-indigo-700  border-2 border-indigo-700 hover:border-indigo-800 
             hover:bg-indigo-50  rounded-md flex flex-row text-center justify-around items-center"
+              hidden
               onClick={handleClick}
             ><strong className=' text-sm'>Info IA</strong> <RiGeminiFill className='text-xl' />
             </button>
