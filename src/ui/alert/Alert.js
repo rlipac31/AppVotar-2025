@@ -1,7 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 
-const Alert = ({ message, textColor, bgColor, size }) => {
+import React from 'react';
+
+// Usamos la desestructuración de JS para asignar los valores por defecto
+const Alert = ({ 
+    message, 
+    textColor = '#000', 
+    bgColor = '#f8d7da', 
+    size = 'medium' 
+}) => {
     const styles = {
         color: textColor,
         backgroundColor: bgColor,
@@ -15,22 +21,14 @@ const Alert = ({ message, textColor, bgColor, size }) => {
     return (
         <div style={styles}>
             {message}
-        
+        </div>
+    );
+    // ... resto del código igual ...
+    return (
+        <div style={styles}>
+            {message}
         </div>
     );
 };
 
-Alert.propTypes = {
-    message: PropTypes.string.isRequired,
-    textColor: PropTypes.string,
-    bgColor: PropTypes.string,
-    size: PropTypes.oneOf(['small', 'medium', 'large']),
-};
-
-Alert.defaultProps = {
-    textColor: '#000',
-    bgColor: '#f8d7da',
-    size: 'medium',
-};
-
-export default Alert;
+export default Alert; // Borramos Alert.propTypes al final
