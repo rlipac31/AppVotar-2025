@@ -98,9 +98,16 @@ const [miCandidatos, setMiCandidatos] = useState([]); // Inicializa con un array
             ) : (
               // Parte FALSE del ternario: Muestra los candidatos reales
               <>
-                {miCandidatos.map((candidato) => (
+             {/*    {miCandidatos.map((candidato) => (
                   <CardCandidato key={candidato._id} candidato={candidato} />
-                ))}
+                ))} */}
+
+                {/* Contenedor Grid Responsivo */}
+                  <div className="flex flex-row  justify-between flex-wrap gap-6">
+                    {candidatos.map((candidato) => (
+                      <CardCandidato key={candidato._id} candidato={candidato} />
+                    ))}
+                  </div>      
 
                 {/* Mensajes opcionales de carga/error, si ya se están mostrando datos */}
                 {loading && miCandidatos.length > 0 && (

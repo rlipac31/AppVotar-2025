@@ -13,10 +13,11 @@ export async function getServerSideProps() {
  /*  const API_URL = process.env.NODE_ENV === 'production'
     ? 'https://app-votos-cnnb.onrender.com/api/votos/result-votos'
     : 'http://localhost:5000/api/votos/result-votos'; */
-     const API_URL = 'https://app-votos-cnnb.onrender.com/api/votos/result-votos';
+    // const API_URL = 'https://app-votos-cnnb.onrender.com/api/votos/result-votos';
+     const URL =`${process.env.NEXT_PUBLIC_API_URL}/votos/result-votos`;
   try {
     // 2. Añade headers y configuración importante
-    const res = await fetch(API_URL, {
+    const res = await fetch(URL, {
       headers: {
         'Content-Type': 'application/json',
       },
@@ -79,7 +80,8 @@ const ResultVotos =  ({ votosCandidato, nameCandidatos }) => {
       /*   const URL = process.env.NODE_ENV === 'production'
         ? 'https://app-votos-cnnb.onrender.com/api/votos/result-votos'
         : 'http://localhost:5000/api/votos/result-votos'; */
-       const URL = 'https://app-votos-cnnb.onrender.com/api/votos/result-votos'; 
+      // const URL = 'https://app-votos-cnnb.onrender.com/api/votos/result-votos';
+       const URL =`${process.env.NEXT_PUBLIC_API_URL}/votos/result-votos`;
       const res = await fetch(URL);
       const { votosCandidato, nameCandidatos } = await res.json();
       setChartData(votosCandidato);

@@ -1,387 +1,617 @@
 
 export const candidatosLocal = [
-	{
-		"nameCandidato": {
-			"firstName": "Carlos",
-			"lastName": "Gonzalo"
-		},
-		"surname": {
-			"paternal": "Alvarez",
-			"maternal": " Loayza"
-		},
-		"imagen": {
-			"alt": "carlos-alvaez.jpg",
-			"url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/carlos-alvaez.jpg.jpg"
-		},
-		"political_party": {
-			"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/Pais-pa-todoss.png.png",
-			"name": "Peru pais para todos"
-		},
-		"biography": {
-			"resumenBio": "Carlos Gonsalo Álvarez Loayza​ ​ es un actor cómico y político peruano. Conocido por sus imitaciones a diferentes personalidades locales e internacionales",
-			"link_wiki": "https://es.wikipedia.org/wiki/Carlos_%C3%81lvarez_Loayza"
-		},
-		"_id": "680e59bd1844db50b05d2435",
-		"state": true
-	},
-	{
-		"nameCandidato": {
-			"firstName": "George",
-			"lastName": " Patrick"
-		},
-		"surname": {
-			"paternal": "Forsait",
-			"maternal": " Sommer"
-		},
-		"imagen": {
-			"alt": "Forsait.jpg",
-			"url": "http://res.cloudinary.com/rlipac/image/upload/v1740523193/Forsait.jpg.jpg"
-		},
-		"political_party": {
-			"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745784593/somo-peru.png.png",
-			"name": "Somos Peru"
-		},
-		"biography": {
-			"resumenBio": "George Patrick Forsyth Sommer ​ es un exfutbolista, empresario y político peruano.​​​ Fue elegido alcalde del distrito de La Victoria en las elecciones municipales de 2018 y ejerció el cargo desde el 1 de enero de 2019 hasta el 12 de octubre de 2020, ​ fecha en la que renunció al cargo para poder postular a las",
-			"link_wiki": "https://es.wikipedia.org/wiki/George_Forsyth"
-		},
-		"_id": "67be46b931229c44994f5712",
-		"state": true
-	},
-	{
-		"nameCandidato": {
-			"firstName": "Jorge",
-			"lastName": ""
-		},
-		"surname": {
-			"paternal": "Nieto",
-			"maternal": "Montesinos"
-		},
-		"imagen": {
-			"alt": "jojrge-Nieto.jpg",
-			"url": "http://res.cloudinary.com/rlipac/image/upload/v1740523604/jojrge-Nieto.jpg.jpg"
-		},
-		"political_party": {
-			"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745796160/PBg.jpg.jpg",
-			"name": "Partido del Buen  Gobierno"
-		},
-		"biography": {
-			"resumenBio": "Para otros usos de este término, véase Jorge Nieto (desambiguación).Jorge Nieto MontesinosJorge Nieto en 2016Ministro de Defensa del Perú5 de diciembre de 2016-3 de enero de 2018Presidente\tPedro Pablo KuczynskiPrimer ministro\tFernando ZavalaMercedes AráozPredecesor\tMariano GonzálezSucesor\tJorge Kisic WagnerMinistro de Cultura del Perú28 de julio de 2016-5 de diciembre de 2016Presidente\tPedro Pablo KuczynskiPrimer ministro\tFernando ZavalaPredecesor\tDiana Álvarez-CalderónSucesor\tSalvador del SolarInformación personalNacimiento\t29 de octubre de 1951 (73 años)Arequipa,  PerúResidencia\tPunta Hermosa, LimaNacionalidad\tPeruanaFamiliaPadres\tWalter Nieto MirandaCarmen Montesinos HartleyEducaciónEducado en\tPontificia Universidad Católica del Perú (Lic. en Derecho y Sociología; 1974-1978)Posgrado\t Facultad Latinoamericana de Ciencias Sociales (Maestría en Ciencia Política; 1982-1984) El Colegio de México (Doctorado en Ciencias Sociales; 1988-1991)Información profesionalOcupación\tSociólogoPartido político\tUnidad Democrático Popular (1980)Victoria Nacional (2020-2021)Partido del Buen Gobierno (Desde 2023)[editar datos en Wikidata]Jorge Nieto Montesinos (Arequipa, 29 de octubre de 1951) es un sociólogo y político peruano. Fue ministro de Defensa durante el gobierno Pedro Pablo Kuczynski desde diciembre del 2016 hasta enero del 2018, donde terminó renunciando ante el indulto otorgado al condenado expresidente Alberto Fujimori. Fue también ministro de Cultura desde julio hasta diciembre del 2016. En 2023",
-			"link_wiki": "https://es.wikipedia.org/wiki/Jorge_Nieto"
-		},
-		"_id": "67be4853b611fd1c873d8df1",
-		"state": true
-	},
-	{
-		"nameCandidato": {
-			"firstName": "Susel",
-			"lastName": "Anamaria"
-		},
-		"surname": {
-			"paternal": "Paredes"
-		},
-		"imagen": {
-			"alt": "SuselParedes-chiko.jpg",
-			"url": "http://res.cloudinary.com/rlipac/image/upload/v1745771744/SuselParedes-chiko.jpg.jpg"
-		},
-		"political_party": {
-			"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791833/Partido_Morado.png.png",
-			"name": "Partido Morado"
-		},
-		"biography": {
-			"resumenBio": "Susel Ana María Paredes Piqué (Jesús María, Lima, 26 de julio de 1963) es una abogada, activista LGBT+, política y actriz peruana. Es congresista de la república por Lima para el periodo 2021-2026.[",
-			"link_wiki": "https://es.wikipedia.org/wiki/Susel_Paredes#:~:text=En%202020%2C%20como%20preparaci%C3%B3n%20para,su%20incorporaci%C3%B3n%20al%20Partido%20Morado."
-		},
-		"_id": "680e5ce1cd4c84240f40b9d4",
-		"state": true
-	},
-	{
-		"nameCandidato": {
-			"lastName": "Sofia",
-			"firstName": "keiko"
-		},
-		"surname": {
-			"maternal": "Higushi",
-			"paternal": "Fujimori"
-		},
-		"imagen": {
-			"alt": "keiko-fujimori.jpg",
-			"url": "http://res.cloudinary.com/rlipac/image/upload/v1740522933/keiko-fujimori.jpg.jpg"
-		},
-		"political_party": {
-			"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745775666/images.png.png",
-			"name": "Fuerza Popular"
-		},
-		"biography": {
-			"resumenBio": "Keiko Sofía Fujimori Higuchi (Jesús María, 25 de mayo de 1975) es una administradora de empresas y política peruana, conocida por su liderazgo del partido fujimorista Fuerza Popular y por haber sido tres veces candidata presidencial y con presencia en la segunda vuelta en todas las ocasione",
-			"link_wiki": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
-		},
-		"_id": "67be462831229c44994f570f",
-		"state": true
-	},
-	{
-		"nameCandidato": {
-			"firstName": "Pablo",
-			"lastName": "Alfonso"
-		},
-		"surname": {
-			"paternal": "Lopez-Chao",
-			"maternal": "Nava"
-		},
-		"imagen": {
-			"alt": "Alfonso_LÃ³pez-Chau.jpg",
-			"url": "http://res.cloudinary.com/rlipac/image/upload/v1740521992/Alfonso_L%C3%83%C2%B3pez-Chau.jpg.jpg"
-		},
-		"political_party": {
-			"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745786879/ahora-nacion.png.png",
-			"name": "Ahora Naccion"
-		},
-		"biography": {
-			"resumenBio": "Pablo Alfonso López-Chau Nava (Callao, 17 de julio de 1950) es un ingeniero, académico, economista y político peruano que ejerce como el rector de la Universidad Nacional de Ingeniería. Previamente fue director del Banco de Reserva del Perú de 2006",
-			"link_wiki": "vhttps://es.wikipedia.org/wiki/Alfonso_L%C3%B3pez-Chau"
-		},
-		"_id": "67be4750b611fd1c873d8de5",
-		"state": true
-	},
-	{
-		"nameCandidato": {
-			"firstName": "Antauro",
-			"lastName": "Higor"
-		},
-		"surname": {
-			"paternal": "Humala",
-			"maternal": "Tasso"
-		},
-		"imagen": {
-			"alt": "Antauro-Humala.jpg",
-			"url": "http://res.cloudinary.com/rlipac/image/upload/v1740509631/Antauro-Humala.jpg.jpg"
-		},
-		"political_party": {
-			"name": "No definido"
-		},
-		"biography": {
-			"resumenBio": "Antauro Igor Humala Tasso es un exmilitar, escritor y político peruano. Es líder y fundador del movimiento movimiento etnocacerista, un colectivo polémico por su exaltación de la identidad peruana, el irredentismo, el antichilenismo radical y el ultranacionalismo",
-			"link_wiki": "https://es.wikipedia.org/wiki/Antauro_Humala"
-		},
-		"_id": "67be4791b611fd1c873d8de9",
-		"state": true
-	},
-	{
-		"nameCandidato": {
-			"firstName": "Hernado",
-			"lastName": ""
-		},
-		"surname": {
-			"paternal": "De Soto",
-			"maternal": "Polar"
-		},
-		"imagen": {
-			"alt": "HernandoDeSoto.jpg",
-			"url": "http://res.cloudinary.com/rlipac/image/upload/v1740523580/HernandoDeSoto.jpg.jpg"
-		},
-		"political_party": {
-			"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745790216/progresemos.jpg.jpg",
-			"name": "Progresemos"
-		},
-		"biography": {
-			"resumenBio": "Hernando de Soto Polar (Arequipa, 2 de junio de 1941) es un economista[1]​[2]​[3]​ y político peruano. Es presidente del Instituto Libertad y Democracia (ILD), un think tank enfocado en el desarrollo económico en los países en desarrollo desde un punto de vista neoliberal",
-			"link_wiki": "https://es.wikipedia.org/wiki/Hernando_de_Soto_(economista)"
-		},
-		"_id": "67be483bb611fd1c873d8def",
-		"state": true
-	},
-	{
-		"nameCandidato": {
-			"firstName": "Rafael",
-			"lastName": "Bernardo"
-		},
-		"surname": {
-			"paternal": "Lopez Aliaga",
-			"maternal": "Carzola"
-		},
-		"imagen": {
-			"alt": "RafaaelLopez.jpg",
-			"url": "http://res.cloudinary.com/rlipac/image/upload/v1740523709/RafaaelLopez.jpg.jpg"
-		},
-		"political_party": {
-			"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745790704/renoovacion-poppular.png.png",
-			"name": "Renovacion Popular"
-		},
-		"biography": {
-			"resumenBio": "Rafael Bernardo López Aliaga Cazorla, conocido como Rafael López Aliaga, es un empresario y político peruano y actual alcalde de Lima tras vencer en las elecciones municipales del 2022. Fue fundador y accionista de Peruval Corp SA además de ser accionista de Ferrocarril Transandino S. A.",
-			"link_wiki": "https://es.wikipedia.org/wiki/Rafael_L%C3%B3pez_Aliaga"
-		},
-		"_id": "67be48bcb611fd1c873d8df5",
-		"state": true
-	},
-	{
-		"nameCandidato": {
-			"firstName": "Veronica",
-			"lastName": "Fanny "
-		},
-		"surname": {
-			"paternal": "Mendoza",
-			"maternal": " Frisch"
-		},
-		"imagen": {
-			"alt": "VeronicAmendosa.jpg",
-			"url": "http://res.cloudinary.com/rlipac/image/upload/v1740523789/VeronicAmendosa.jpg.jpg"
-		},
-		"political_party": {
-			"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791350/jussnto-peru.png.png",
-			"name": "Juntos  por el Peru"
-		},
-		"biography": {
-			"resumenBio": "Verónika Fanny Mendoza Frisch (Cusco, 9 de diciembre de 1980) es una psicóloga, antropóloga, profesora y política peruanofrancesa. Es lideresa del Movimiento Nuevo Perú y fue dos veces candidata presidencial, siendo en las elecciones del 2016 y en las elecciones del 2021. Ejerció como congresista de la república representando al Cusco durante el periodo 2011-2016.",
-			"link_wiki": "https://es.wikipedia.org/wiki/Ver%C3%B3nika_Mendoza"
-		},
-		"_id": "67be490cb611fd1c873d8df9",
-		"state": true
-	},
-	{
-		"nameCandidato": {
-			"firstName": "Edward Phillip",
-			"lastName": " Alexander "
-		},
-		"surname": {
-			"paternal": "Butters",
-			"maternal": " Rivadeneira"
-		},
-		"imagen": {
-			"alt": "download.webp",
-			"url": "http://res.cloudinary.com/rlipac/image/upload/v1745792712/download.webp.webp"
-		},
-		"political_party": {
-			"name": "No definido"
-		},
-		"biography": {
-			"resumenBio": "Edward Phillip Alexander Butters Rivadeneira (Trujillo, 13 de junio de 1967) es un presentador de televisión, locutor de radio, empresario y escritor peruano.[1]​ Es fundador de la emisora peruana PBO Radio y del canal de YouTube de noticias PBO. Es conocido por conducir el programa Combutters, que se emitió originalmente en Willax Televisión entre los años 2017 y 2024."
-		},
-		"_id": "680eaec8c5ccead66dbd93bc",
-		"state": true
-	},
-	{
-		"nameCandidato": {
-			"firstName": "Cesar",
-			"lastName": ""
-		},
-		"surname": {
-			"paternal": "Acuña",
-			"maternal": "Peralta"
-		},
-		"imagen": {
-			"alt": "cesarAcuÃ±Ã±a.jpg",
-			"url": "http://res.cloudinary.com/rlipac/image/upload/v1740523440/cesarAcu%C3%83%C2%B1%C3%83%C2%B1a.jpg.jpg"
-		},
-		"political_party": {
-			"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745788887/Alianza_para_el_Progreso_Peru.png.png",
-			"name": "Aliaanza Para el  Progreso"
-		},
-		"biography": {
-			"resumenBio": "César Acuña Peralta es un ingeniero químico, empresario y político peruano. Líder y fundador del partido Alianza para el Progreso, ejerce actualmente como gobernador regional de La Libertad desde el 1 de enero del 2023, cargo que ejerció anteriormente en el año 2015César Acuña Peralta es un ingeniero químico, empresario y político peruano. Líder y fundador del partido Alianza para el Progreso, ejerce actualmente como gobernador regional de La Libertad desde el 1 de enero del 2023, cargo que ejerció anteriormente en el año 2015",
-			"link_wiki": "https://es.wikipedia.org/wiki/Antauro_Humala"
-		},
-		"_id": "67be47afb611fd1c873d8deb",
-		"state": true
-	},
-	{
-		"nameCandidato": {
-			"firstName": "Fernando ",
-			"lastName": ""
-		},
-		"surname": {
-			"paternal": "Olivera",
-			"maternal": ""
-		},
-		"imagen": {
-			"alt": "fernadoOlivera.jpg",
-			"url": "http://res.cloudinary.com/rlipac/image/upload/v1740523522/fernadoOlivera.jpg.jpg"
-		},
-		"political_party": {
-			"name": "Somoms Peru"
-		},
-		"biography": {
-			"resumenBio": "reseña biografica de aantauro Keiko",
-			"link_wiki": ""
-		},
-		"_id": "67be4801b611fd1c873d8ded",
-		"state": true
-	},
-	{
-		"nameCandidato": {
-			"firstName": "Rafael",
-			"lastName": "Alberto"
-		},
-		"surname": {
-			"paternal": "Viscarra",
-			"maternal": "Cornejo"
-		},
-		"imagen": {
-			"alt": "Martin-Vizcarra.jpg",
-			"url": "http://res.cloudinary.com/rlipac/image/upload/v1740523650/Martin-Vizcarra.jpg.jpg"
-		},
-		"political_party": {
-			"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791028/Logo_de_Per%C3%83%C2%BA_Primero.jpg.jpg",
-			"name": "El Peru Primero"
-		},
-		"biography": {
-			"resumenBio": "Martín Alberto Vizcarra Cornejo es un ingeniero civil y político peruano. Fue presidente de la República del Perú desde el 23 de marzo de 2018 hasta el 9 de noviembre de 2020",
-			"link_wiki": "https://es.wikipedia.org/wiki/Mart%C3%ADn_Vizcarra"
-		},
-		"_id": "67be4882b611fd1c873d8df3",
-		"state": true
-	},
-	{
-		"nameCandidato": {
-			"firstName": "Isaac",
-			"lastName": "Alfredo"
-		},
-		"surname": {
-			"paternal": "Barnechea",
-			"maternal": "Garcia"
-		},
-		"imagen": {
-			"alt": "barnecchea.jpg",
-			"url": "http://res.cloudinary.com/rlipac/image/upload/v1745787805/barnecchea.jpg.jpg"
-		},
-		"political_party": {
-			"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745787957/accion-popular.png.png",
-			"name": "Accion Popular"
-		},
-		"biography": {
-			"resumenBio": "Isaac Alfredo Barnechea García (Ica, 19 de mayo de 1952)[1]​ es un escritor, periodista y político peruano. Fue candidato presidencial por el Partido Acción Popular a las elecciones generales de Perú que se llevaron a cabo el 10 de abril de 2016, en las cuales quedó en el cuarto lugar",
-			"link_wiki": "https://es.wikipedia.org/wiki/Alfredo_Barnechea"
-		},
-		"_id": "680e9b9d626a35a8f2619ea8",
-		"state": true
-	},
-	{
-		
-		"nameCandidato": {
-			"firstName": "Alfonso ",
-			"lastName": "Carlos"
-		},
-		"surname": {
-			"paternal": "Espá",
-			"maternal": "Garcés-Alvear"
-		},
-		"imagen": {
-			"alt": "carlos spa.jpg",
-			"url": "https://res.cloudinary.com/rlipac/image/upload/v1757386452/Carlos_Esp%C3%A1_ryuoou.jpg"
-		},
-		"political_party": {
-			"imgeUrl": "https://res.cloudinary.com/rlipac/image/upload/v1757386532/logo-sicreo_1_yqldue.png",
-			"name": "SiCreo"
-		},
-		"biography": {
-			"resumenBio": "Es abogado por la Pontificia Universidad Católica del Perú, obtuvo un máster en Ciencias Políticas por The American University.[1]​ Además, es miembro de la Pi Alpha Sigma National Political Science Honor Society",
-			"link_wiki": "https://es.wikipedia.org/wiki/Carlos_Esp%C3%A1"
-		},
-		"_id": "68bf95b864b6a384afa55764",
-		"state": true
-		
-	}
+    {
+        "nameCandidato": "Alfonso",
+        "surname": "López Chau",
+        "imagen": {
+            "alt": "alfonso-lopez-chau.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/alfonso-lopez-chau.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/ahora-nacion.png",
+            "name": "Ahora Nación"
+        },
+        "biography": {
+            "resumenBio": "Economista y académico. Fue rector de la Universidad Nacional de Ingeniería (UNI). Lidera el partido Ahora Nación.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Alfonso_L%C3%B3pez_Chau"
+        },
+        "_id": "680e59bd1844db50b05d0001",
+        "state": true
+    },
+    {
+        "nameCandidato": "Fiorella",
+        "surname": "Molinelli",
+        "imagen": {
+            "alt": "fiorella-molinelli.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/fiorella-molinelli.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/fuerza-y-libertad.png",
+            "name": "Alianza Fuerza y Libertad"
+        },
+        "biography": {
+            "resumenBio": "Economista y exfuncionaria pública. Fue presidenta ejecutiva de EsSalud y ministra de Desarrollo e Inclusión Social.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Fiorella_Molinelli"
+        },
+        "_id": "680e59bd1844db50b05d0002",
+        "state": true
+    },
+    {
+        "nameCandidato": "César",
+        "surname": "Acuña Peralta",
+        "imagen": {
+            "alt": "cesar-acuna.jpg",
+            "url": "https://res.cloudinary.com/rlipac/image/upload/v1740523440/cesarAcu%C3%83%C2%B1%C3%83%C2%B1a.jpg.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "https://res.cloudinary.com/rlipac/image/upload/v1745788731/Alianza_para_el_Progreso_Peru.svg.png.png",
+            "name": "Alianza Para el Progreso"
+        },
+        "biography": {
+            "resumenBio": "Empresario educativo y político. Fundador de la Universidad César Vallejo y actual Gobernador Regional de La Libertad.",
+            "link_wiki": "https://es.wikipedia.org/wiki/C%C3%A9sar_Acu%C3%B1a"
+        },
+        "_id": "680e59bd1844db50b05d0003",
+        "state": true
+    },
+    {
+        "nameCandidato": "Roberto",
+        "surname": "Chiabra León",
+        "imagen": {
+            "alt": "roberto-chiabra.jpg",
+            "url": "https://res.cloudinary.com/rlipac/image/upload/v1740523747/RoberrtoQuuiabbra.jpg.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/unidad-nacional.png",
+            "name": "Alianza Unidad Nacional"
+        },
+        "biography": {
+            "resumenBio": "General de división en retiro y congresista. Fue Ministro de Defensa y Comandante General del Ejército.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Roberto_Chiabra"
+        },
+        "_id": "680e59bd1844db50b05d0004",
+        "state": true
+    },
+    {
+        "nameCandidato": "Ronald",
+        "surname": "Atencio",
+        "imagen": {
+            "alt": "ronald-atencio.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/ronald-atencio.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/venceremos.png",
+            "name": "Alianza Venceremos"
+        },
+        "biography": {
+            "resumenBio": "Abogado penalista, conocido por haber ejercido la defensa legal del expresidente Pedro Castillo.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Ronald_Atencio"
+        },
+        "_id": "680e59bd1844db50b05d0005",
+        "state": true
+    },
+    {
+        "nameCandidato": "José",
+        "surname": "Williams Zapata",
+        "imagen": {
+            "alt": "jose-williams.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/jose-williams.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/avanza-pais.png",
+            "name": "Avanza País"
+        },
+        "biography": {
+            "resumenBio": "Militar retirado y político. Fue Presidente del Congreso y jefe de la operación Chavín de Huántar.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Jos%C3%A9_Williams"
+        },
+        "_id": "680e59bd1844db50b05d0006",
+        "state": true
+    },
+    {
+        "nameCandidato": "Yonhy",
+        "surname": "Lescano Ancieta",
+        "imagen": {
+            "alt": "yonhy-lescano.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/yonhy-lescano.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/cooperacion-popular.png",
+            "name": "Cooperación Popular"
+        },
+        "biography": {
+            "resumenBio": "Abogado y político. Excongresista por Acción Popular y excandidato presidencial en 2021.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Yonhy_Lescano"
+        },
+        "_id": "680e59bd1844db50b05d0007",
+        "state": true
+    },
+    {
+        "nameCandidato": "Álvaro",
+        "surname": "Paz de la Barra",
+        "imagen": {
+            "alt": "alvaro-paz-de-la-barra.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/alvaro-paz-de-la-barra.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/fe-en-el-peru.png",
+            "name": "Fe en el Perú"
+        },
+        "biography": {
+            "resumenBio": "Abogado y político. Fue alcalde del distrito de La Molina y presidente de la AMPE.",
+            "link_wiki": "https://es.wikipedia.org/wiki/%C3%81lvaro_Paz_de_la_Barra"
+        },
+        "_id": "680e59bd1844db50b05d0008",
+        "state": true
+    },
+    {
+        "nameCandidato": "Fernando",
+        "surname": "Olivera Vega",
+        "imagen": {
+            "alt": "fernando-olivera.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/fernando-olivera.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/frente-esperanza.png",
+            "name": "Frente de la Esperanza"
+        },
+        "biography": {
+            "resumenBio": "Político peruano. Fue Ministro de Justicia y Embajador en España. Fundador del Frente de la Esperanza.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Fernando_Olivera"
+        },
+        "_id": "680e59bd1844db50b05d0009",
+        "state": true
+    },
+    {
+        "nameCandidato": "Keiko",
+        "surname": "Fujimori Higuchi",
+        "imagen": {
+            "alt": "keiko-fujimori.jpg",
+            "url": "https://res.cloudinary.com/rlipac/image/upload/v1746227290/Keiko-Fujimori.jpg.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/fuerza-popular.png",
+            "name": "Fuerza Popular"
+        },
+        "biography": {
+            "resumenBio": "Administradora y política. Ex primera dama y congresista. Postula por cuarta vez a la presidencia.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
+        },
+        "_id": "680e59bd1844db50b05d0010",
+        "state": true
+    },
+    {
+        "nameCandidato": "Wolfgang",
+        "surname": "Grozo Costa",
+        "imagen": {
+            "alt": "wolfgang-grozo.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/wolfgang-grozo.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/integridad-democratica.png",
+            "name": "Integridad Democrática"
+        },
+        "biography": {
+            "resumenBio": "Abogado y político. Lidera la plancha presidencial del partido de reciente inscripción Integridad Democrática.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Wolfgang_Grozo"
+        },
+        "_id": "680e59bd1844db50b05d0011",
+        "state": true
+    },
+    {
+        "nameCandidato": "Roberto",
+        "surname": "Sánchez Palomino",
+        "imagen": {
+            "alt": "roberto-sanchez.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/roberto-sanchez.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/juntos-peru.png",
+            "name": "Juntos por el Perú"
+        },
+        "biography": {
+            "resumenBio": "Psicólogo y político. Fue Ministro de Comercio Exterior y Turismo y actual congresista de la República.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Roberto_S%C3%A1nchez_Palomino"
+        },
+        "_id": "680e59bd1844db50b05d0012",
+        "state": true
+    },
+    {
+        "nameCandidato": "Rafael",
+        "surname": "Belaúnde Llosa",
+        "imagen": {
+            "alt": "rafael-belaunde.jpg",
+            "url": "https://res.cloudinary.com/rlipac/image/upload/v1740523709/RafaaelLopez.jpg.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "https://res.cloudinary.com/rlipac/image/upload/v1745790704/renoovacion-poppular.png.png",
+            "name": "Renovación Popular"
+        },
+        "biography": {
+            "resumenBio": "Empresario y político. Fue Ministro de Energía y Minas. Es nieto del expresidente Fernando Belaúnde Terry.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Rafael_Bela%C3%BAnde_Llosa"
+        },
+        "_id": "680e59bd1844db50b05d0013",
+        "state": true
+    },
+    {
+        "nameCandidato": "Carlos Gonzalo",
+        "surname": "Álvarez Loayza",
+        "imagen": {
+            "alt": "carlos-alvarez.jpg",
+            "url": "https://res.cloudinary.com/rlipac/image/upload/v1745767540/carlos-alvaez.jpg.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "https://res.cloudinary.com/rlipac/image/upload/v1745791608/Pais-pa-todoss.png.png",
+            "name": "País para todos"
+        },
+        "biography": {
+            "resumenBio": "Actor cómico e imitador. Ha incursionado en la política enfocándose en temas de seguridad ciudadana y justicia.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Carlos_%C3%81lvarez_Loayza"
+        },
+        "_id": "680e59bd1844db50b05d0014",
+        "state": true
+    },
+    {
+        "nameCandidato": "Enrique",
+        "surname": "Valderrama",
+        "imagen": {
+            "alt": "enrique-valderrama.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/enrique-valderrama.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/apra.png",
+            "name": "Partido Aprista Peruano"
+        },
+        "biography": {
+            "resumenBio": "Dirigente político aprista. Lidera el retorno del APRA a las elecciones presidenciales tras su reinscripción.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Partido_Aprista_Peruano"
+        },
+        "_id": "680e59bd1844db50b05d0015",
+        "state": true
+    },
+    {
+        "nameCandidato": "Ricardo",
+        "surname": "Belmont Cassinelli",
+        "imagen": {
+            "alt": "ricardo-belmont.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/ricardo-belmont.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/obras.png",
+            "name": "Partido Cívico Obras"
+        },
+        "biography": {
+            "resumenBio": "Empresario de medios y político. Fue Alcalde de Lima en dos periodos y excongresista.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Ricardo_Belmont"
+        },
+        "_id": "680e59bd1844db50b05d0016",
+        "state": true
+    },
+    {
+        "nameCandidato": "Napoleón",
+        "surname": "Becerra",
+        "imagen": {
+            "alt": "napoleon-becerra.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/napoleon-becerra.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/pte.png",
+            "name": "P. de los Trabajadores y Emprendedores"
+        },
+        "biography": {
+            "resumenBio": "Dirigente gremial y político. Lidera la fórmula de este nuevo partido de enfoque laboral y productivo.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Per%C3%BA_de_2026"
+        },
+        "_id": "680e59bd1844db50b05d0017",
+        "state": true
+    },
+    {
+        "nameCandidato": "Jorge",
+        "surname": "Nieto Montesinos",
+        "imagen": {
+            "alt": "jorge-nieto.jpg",
+            "url": "https://res.cloudinary.com/rlipac/image/upload/v1746227493/jorge-nieto.jpg.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "https://res.cloudinary.com/rlipac/image/upload/v1745796160/PBg.jpg.jpg",
+            "name": "Partido del Buen Gobierno"
+        },
+        "biography": {
+            "resumenBio": "Sociólogo y político. Fue Ministro de Cultura y Ministro de Defensa en el gobierno de PPK.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Jorge_Nieto_Montesinos"
+        },
+        "_id": "680e59bd1844db50b05d0018",
+        "state": true
+    },
+    {
+        "nameCandidato": "Charlie",
+        "surname": "Carrasco",
+        "imagen": {
+            "alt": "charlie-carrasco.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/charlie-carrasco.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/pdu-peru.png",
+            "name": "Partido Demócrata Unido Perú"
+        },
+        "biography": {
+            "resumenBio": "Político regional y líder de la agrupación PDU Perú.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Per%C3%BA_de_2026"
+        },
+        "_id": "680e59bd1844db50b05d0019",
+        "state": true
+    },
+    {
+        "nameCandidato": "Alex",
+        "surname": "Gonzales Castillo",
+        "imagen": {
+            "alt": "alex-gonzales.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/alex-gonzales.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/democrata-verde.png",
+            "name": "Partido Demócrata Verde"
+        },
+        "biography": {
+            "resumenBio": "Político. Fue Alcalde de San Juan de Lurigancho y fundador del Partido Demócrata Verde.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Alex_Gonzales_Castillo"
+        },
+        "_id": "680e59bd1844db50b05d0020",
+        "state": true
+    },
+    {
+        "nameCandidato": "Armando",
+        "surname": "Massé",
+        "imagen": {
+            "alt": "armando-masse.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/armando-masse.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/pdf.png",
+            "name": "Partido Democrático Federal"
+        },
+        "biography": {
+            "resumenBio": "Médico y comunicador. Conocido por sus programas de salud en radio y televisión.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Armando_Mass%C3%A9"
+        },
+        "_id": "680e59bd1844db50b05d0021",
+        "state": true
+    },
+    {
+        "nameCandidato": "Mesías",
+        "surname": "Guevara Amasifuén",
+        "imagen": {
+            "alt": "mesias-guevara.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/mesias-guevara.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/morado.png",
+            "name": "Partido Morado"
+        },
+        "biography": {
+            "resumenBio": "Ingeniero y político. Fue Gobernador Regional de Cajamarca y congresista de la República.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Mes%C3%ADas_Guevara"
+        },
+        "_id": "680e59bd1844db50b05d0022",
+        "state": true
+    },
+    {
+        "nameCandidato": "Herbert",
+        "surname": "Caller Gutiérrez",
+        "imagen": {
+            "alt": "herbert-caller.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/herbert-caller.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/patriotico.png",
+            "name": "Partido Patriótico del Perú"
+        },
+        "biography": {
+            "resumenBio": "Abogado y líder político. Preside el Partido Patriótico del Perú.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Per%C3%BA_de_2026"
+        },
+        "_id": "680e59bd1844db50b05d0023",
+        "state": true
+    },
+    {
+        "nameCandidato": "Walter",
+        "surname": "Chirinos",
+        "imagen": {
+            "alt": "walter-chirinos.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/walter-chirinos.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/prin.png",
+            "name": "P. Regionalista de Integración Nacional"
+        },
+        "biography": {
+            "resumenBio": "Político regional y candidato presidencial por el partido PRIN.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Per%C3%BA_de_2026"
+        },
+        "_id": "680e59bd1844db50b05d0024",
+        "state": true
+    },
+    {
+        "nameCandidato": "Vladimir",
+        "surname": "Cerrón Rojas",
+        "imagen": {
+            "alt": "vladimir-cerron.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/vladimir-cerron.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/peru-libre.png",
+            "name": "Perú Libre"
+        },
+        "biography": {
+            "resumenBio": "Médico neurocirujano y político. Fue Gobernador Regional de Junín y fundador de Perú Libre.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Vladimir_Cerr%C3%B3n"
+        },
+        "_id": "680e59bd1844db50b05d0025",
+        "state": true
+    },
+    {
+        "nameCandidato": "Francisco",
+        "surname": "Diez-Canseco Távara",
+        "imagen": {
+            "alt": "francisco-diez-canseco.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/francisco-diez-canseco.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/peru-accion.png",
+            "name": "Perú Acción"
+        },
+        "biography": {
+            "resumenBio": "Político y abogado. Fue congresista y presidente del partido Perú Acción.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Francisco_Diez_Canseco_T%C3%A1vara"
+        },
+        "_id": "680e59bd1844db50b05d0026",
+        "state": true
+    },
+    {
+        "nameCandidato": "Carlos",
+        "surname": "Jaico Carranza",
+        "imagen": {
+            "alt": "carlos-jaico.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/carlos-jaico.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/peru-moderno.png",
+            "name": "Perú Moderno"
+        },
+        "biography": {
+            "resumenBio": "Abogado y político. Fue Secretario General de Palacio de Gobierno.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Carlos_Jaico"
+        },
+        "_id": "680e59bd1844db50b05d0027",
+        "state": true
+    },
+    {
+        "nameCandidato": "José",
+        "surname": "Luna Gálvez",
+        "imagen": {
+            "alt": "jose-luna.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/jose-luna.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/podemos-peru.png",
+            "name": "Podemos Perú"
+        },
+        "biography": {
+            "resumenBio": "Empresario educativo y político. Congresista y fundador del partido Podemos Perú.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Jos%C3%A9_Luna_G%C3%A1lvez"
+        },
+        "_id": "680e59bd1844db50b05d0028",
+        "state": true
+    },
+    {
+        "nameCandidato": "Paul",
+        "surname": "Jaimes",
+        "imagen": {
+            "alt": "paul-jaimes.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/paul-jaimes.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/progresemos.png",
+            "name": "Progresemos"
+        },
+        "biography": {
+            "resumenBio": "Abogado y político. Encabeza la fórmula presidencial del partido Progresemos.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Elecciones_generales_de_Per%C3%BA_de_2026"
+        },
+        "_id": "680e59bd1844db50b05d0029",
+        "state": true
+    },
+    {
+        "nameCandidato": "Rafael",
+        "surname": "López Aliaga",
+        "imagen": {
+            "alt": "rafael-lopez-aliaga.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/rafael-lopez-aliaga.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/renovacion-popular.png",
+            "name": "Renovación Popular"
+        },
+        "biography": {
+            "resumenBio": "Empresario y político. Actual Alcalde de Lima y líder de Renovación Popular.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Rafael_L%C3%B3pez_Aliaga"
+        },
+        "_id": "680e59bd1844db50b05d0030",
+        "state": true
+    },
+    {
+        "nameCandidato": "Carlos",
+        "surname": "Espá Garcés-Alvear",
+        "imagen": {
+            "alt": "carlos-espa.jpg",
+            "url": "https://res.cloudinary.com/rlipac/image/upload/v1757386452/Carlos_Esp%C3%A1_ryuoou.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/si-creo.png",
+            "name": "Sí Creo"
+        },
+        "biography": {
+            "resumenBio": "Periodista y economista. Fue conductor de programas políticos en televisión nacional.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Carlos_Esp%C3%A1"
+        },
+        "_id": "680e59bd1844db50b05d0031",
+        "state": true
+    },
+    {
+        "nameCandidato": "George",
+        "surname": "Forsyth Sommer",
+        "imagen": {
+            "alt": "george-forsyth.jpg",
+            "url": "https://res.cloudinary.com/rlipac/image/upload/v1745790704/renoovacion-poppular.png.png"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/somos-peru.png",
+            "name": "Somos Perú"
+        },
+        "biography": {
+            "resumenBio": "Exfutbolista y político. Fue Alcalde de La Victoria y candidato presidencial en 2021.",
+            "link_wiki": "https://es.wikipedia.org/wiki/George_Forsyth"
+        },
+        "_id": "680e59bd1844db50b05d0032",
+        "state": true
+    },
+    {
+        "nameCandidato": "Rosario",
+        "surname": "Fernández Figueroa",
+        "imagen": {
+            "alt": "rosario-fernandez.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/rosario-fernandez.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/camino-diferente.png",
+            "name": "Un Camino Diferente"
+        },
+        "biography": {
+            "resumenBio": "Abogada y política. Fue Presidenta del Consejo de Ministros y Ministra de Justicia.",
+            "link_wiki": "https://es.wikipedia.org/wiki/Rosario_Fern%C3%A1ndez_Figueroa"
+        },
+        "_id": "680e59bd1844db50b05d0033",
+        "state": true
+    },
+    {
+        "nameCandidato": "Héctor",
+        "surname": "Valer Pinto",
+        "imagen": {
+            "alt": "hector-valer.jpg",
+            "url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/hector-valer.jpg"
+        },
+        "political_party": {
+            "imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/voces-del-pueblo.png",
+            "name": "Voces del Pueblo"
+        },
+        "biography": {
+            "resumenBio": "Abogado y congresista. Fue brevemente Presidente del Consejo de Ministros en 2022.",
+            "link_wiki": "https://es.wikipedia.org/wiki/H%C3%A9ctor_Valer"
+        },
+        "_id": "680e59bd1844db50b05d0034",
+        "state": true
+    }
 ]
-
 
 export default candidatosLocal

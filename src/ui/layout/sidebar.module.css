@@ -1,8 +1,8 @@
 
 .main__container__sidebar{
   background-color: var(--primary-color);
-  max-width: 19vw;
-  min-width: 18vw;
+  max-width: 14vw;
+  min-width: 14vw;
   min-height: 100vh;
   max-height: auto;
  

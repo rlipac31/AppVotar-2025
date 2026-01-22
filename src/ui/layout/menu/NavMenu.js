@@ -1,45 +1,45 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import styles from './nav-menu.module.css'
 import logoVote from '../../../../public/votos/vote.svg'
-import Boton from '../../boton/Boton'
-//import AlertPopup from '../../alert/Popup'
-import { montserrat} from '../../../lib/fonts'
+import { montserrat } from '../../../lib/fonts'
+
 const NavMenu = () => {
   return (
-    <div className={styles.menu__container}>
-      <Image
-        src={logoVote}
-        width={60}
-        height={100}
-        alt={'logo-AppVotar'}
-        sizes="(max-width: 768px) 2rem, (max-width: 1200px) 4rem" 
-      />  
-      <nav   className="cursor-pointer">
-          <ul className={`${styles.menu__container__links}  ${montserrat.className}`}>
-            <Link href={'/'}>Home</Link>
-            <Link href={'/candidatos'}>Candidatos</Link>
-            <Link href={'/#resultados'}>Resultados</Link>
-            <Link href={'#'}> 
-            
-                    <Boton
-                  
-                        texto={"Login"}
-                        textColor={"#ffffff"}
-                        bgColor={'var(--primary-color)'}
-                        size={'medium'}
-                   />
-                     
-                    
-                 
-                </Link>
+    <div className={`flex h-full flex-col p-6 ${montserrat.className}`}>
+      <div className="mb-10 flex justify-center">
+        <Image
+          src={logoVote}
+          width={60}
+          height={60}
+          alt="logo"
+          className="brightness-0 invert"
+        />
+      </div>
 
-          </ul>
-         
+      <nav className="flex flex-1 flex-col gap-2">
+        <NavLink href="/" label="Home" />
+        <NavLink href="/candidatos" label="Candidatos" />
+        <NavLink href="/#resultados" label="Resultados" />
       </nav>
+
+      <div className="mt-auto">
+        <Link 
+          href="/login"
+          className="flex w-full items-center justify-center rounded-lg bg-french-blue-600 py-3 text-sm font-bold text-white transition-all hover:bg-french-blue-500"
+        >
+          Login
+        </Link>
+      </div>
     </div>
   )
 }
 
-export default NavMenu  
+const NavLink = ({ href, label }) => (
+  <Link href={href} className="rounded-lg px-4 py-3 text-french-blue-100 hover:bg-french-blue-900 transition-colors text-sm">
+    {label}
+  </Link>
+)
+
+export default NavMenu

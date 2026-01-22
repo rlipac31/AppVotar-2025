@@ -1,6 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.NEXT_PUBLIC_GEMINI_API_KEY });
+//const ai = new GoogleGenAI({ apiKey: process.env.NEXT_PUBLIC_GEMINI_API_KEY });
+const ai = new GoogleGenAI({ apiKey: "iiikkkkk.........." });
 //const ai = new GoogleGenAI({ apiKey: "AIzaSyA6Qz58HWPPf_cAp6UBgVEQydc0QhighPI" });
 
 export async function infoCandidato(prompt)  {

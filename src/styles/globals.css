@@ -22,6 +22,24 @@ html {
   width: 100%;
  
 }
+
+
+
+@theme{
+  --color-french-blue-50: #e6f0ff;
+--color-french-blue-100: #cde1fe;
+--color-french-blue-200: #9bc2fd;
+--color-french-blue-300: #68a4fd;
+--color-french-blue-400: #3685fc;
+--color-french-blue-500: #0467fb;
+--color-french-blue-600: #0352c9;
+--color-french-blue-700: #023e97;
+--color-french-blue-800: #022964;
+--color-french-blue-900: #011532;
+--color-french-blue-950: #010e23;
+
+
+}
   :root {
 
     --primary-font:"Montserrat", serif;

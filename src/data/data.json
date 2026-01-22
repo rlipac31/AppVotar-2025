@@ -1,361 +1,185 @@
 {
-	"totalCandidatos" :15,
-	"candidatosLocal" :[
+	"totalCandidatos": 15,
+	"candidatosLocal": [
 		{
-			"nameCandidato": {
-				"firstName": "Carlos",
-				"lastName": "Gonzalo"
-			},
-			"surname": {
-				"paternal": "Alvarez",
-				"maternal": " Loayza"
-			},
+			"nameCandidato": "Carlos Gonzalo",
+			"surname": "Álvarez Loayza",
 			"imagen": {
-				"alt": "carlos-alvaez.jpg",
-				"url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/carlos-alvaez.jpg.jpg"
+				"alt": "carlos-alvarez.jpg",
+				"url": "http://res.cloudinary.com/rlipac/image/upload/v1745767540/carlos-alvarez.jpg"
 			},
 			"political_party": {
-				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/Pais-pa-todoss.png.png",
-				"name": "Peru pais para todos"
+				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791608/pais-para-todos.png",
+				"name": "País para Todos"
 			},
 			"biography": {
-				"resumenBio": "Carlos Gonsalo Álvarez Loayza​ ​ es un actor cómico y político peruano. Conocido por sus imitaciones a diferentes personalidades locales e internacionales",
+				"resumenBio": "Actor cómico y activista político. Centra su campaña en la lucha contra la inseguridad ciudadana y la reforma del sistema judicial.",
 				"link_wiki": "https://es.wikipedia.org/wiki/Carlos_%C3%81lvarez_Loayza"
 			},
 			"_id": "680e59bd1844db50b05d2435",
 			"state": true
 		},
 		{
-			"nameCandidato": {
-				"firstName": "George",
-				"lastName": " Patrick"
-			},
-			"surname": {
-				"paternal": "Forsait",
-				"maternal": " Sommer"
-			},
-			"imagen": {
-				"alt": "Forsait.jpg",
-				"url": "http://res.cloudinary.com/rlipac/image/upload/v1740523193/Forsait.jpg.jpg"
-			},
-			"political_party": {
-				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745784593/somo-peru.png.png",
-				"name": "Somos Peru"
-			},
-			"biography": {
-				"resumenBio": "George Patrick Forsyth Sommer ​ es un exfutbolista, empresario y político peruano.​​​ Fue elegido alcalde del distrito de La Victoria en las elecciones municipales de 2018 y ejerció el cargo desde el 1 de enero de 2019 hasta el 12 de octubre de 2020, ​ fecha en la que renunció al cargo para poder postular a las",
-				"link_wiki": "https://es.wikipedia.org/wiki/George_Forsyth"
-			},
-			"_id": "67be46b931229c44994f5712",
-			"state": true
-		},
-		{
-			"nameCandidato": {
-				"firstName": "Jorge",
-				"lastName": ""
-			},
-			"surname": {
-				"paternal": "Nieto",
-				"maternal": "Montesinos"
-			},
-			"imagen": {
-				"alt": "jojrge-Nieto.jpg",
-				"url": "http://res.cloudinary.com/rlipac/image/upload/v1740523604/jojrge-Nieto.jpg.jpg"
-			},
-			"political_party": {
-				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745796160/PBg.jpg.jpg",
-				"name": "Partido del Buen  Gobierno"
-			},
-			"biography": {
-				"resumenBio": "Para otros usos de este término, véase Jorge Nieto (desambiguación).Jorge Nieto MontesinosJorge Nieto en 2016Ministro de Defensa del Perú5 de diciembre de 2016-3 de enero de 2018Presidente\tPedro Pablo KuczynskiPrimer ministro\tFernando ZavalaMercedes AráozPredecesor\tMariano GonzálezSucesor\tJorge Kisic WagnerMinistro de Cultura del Perú28 de julio de 2016-5 de diciembre de 2016Presidente\tPedro Pablo KuczynskiPrimer ministro\tFernando ZavalaPredecesor\tDiana Álvarez-CalderónSucesor\tSalvador del SolarInformación personalNacimiento\t29 de octubre de 1951 (73 años)Arequipa,  PerúResidencia\tPunta Hermosa, LimaNacionalidad\tPeruanaFamiliaPadres\tWalter Nieto MirandaCarmen Montesinos HartleyEducaciónEducado en\tPontificia Universidad Católica del Perú (Lic. en Derecho y Sociología; 1974-1978)Posgrado\t Facultad Latinoamericana de Ciencias Sociales (Maestría en Ciencia Política; 1982-1984) El Colegio de México (Doctorado en Ciencias Sociales; 1988-1991)Información profesionalOcupación\tSociólogoPartido político\tUnidad Democrático Popular (1980)Victoria Nacional (2020-2021)Partido del Buen Gobierno (Desde 2023)[editar datos en Wikidata]Jorge Nieto Montesinos (Arequipa, 29 de octubre de 1951) es un sociólogo y político peruano. Fue ministro de Defensa durante el gobierno Pedro Pablo Kuczynski desde diciembre del 2016 hasta enero del 2018, donde terminó renunciando ante el indulto otorgado al condenado expresidente Alberto Fujimori. Fue también ministro de Cultura desde julio hasta diciembre del 2016. En 2023",
-				"link_wiki": "https://es.wikipedia.org/wiki/Jorge_Nieto"
-			},
-			"_id": "67be4853b611fd1c873d8df1",
-			"state": true
-		},
-		{
-			"nameCandidato": {
-				"firstName": "Susel",
-				"lastName": "Anamaria"
-			},
-			"surname": {
-				"paternal": "Paredes"
-			},
-			"imagen": {
-				"alt": "SuselParedes-chiko.jpg",
-				"url": "http://res.cloudinary.com/rlipac/image/upload/v1745771744/SuselParedes-chiko.jpg.jpg"
-			},
-			"political_party": {
-				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791833/Partido_Morado.png.png",
-				"name": "Partido Morado"
-			},
-			"biography": {
-				"resumenBio": "Susel Ana María Paredes Piqué (Jesús María, Lima, 26 de julio de 1963) es una abogada, activista LGBT+, política y actriz peruana. Es congresista de la república por Lima para el periodo 2021-2026.[",
-				"link_wiki": "https://es.wikipedia.org/wiki/Susel_Paredes#:~:text=En%202020%2C%20como%20preparaci%C3%B3n%20para,su%20incorporaci%C3%B3n%20al%20Partido%20Morado."
-			},
-			"_id": "680e5ce1cd4c84240f40b9d4",
-			"state": true
-		},
-		{
-			"nameCandidato": {
-				"lastName": "Sofia",
-				"firstName": "keiko"
-			},
-			"surname": {
-				"maternal": "Higushi",
-				"paternal": "Fujimori"
-			},
+			"nameCandidato": "Keiko Sofía",
+			"surname": "Fujimori Higuchi",
 			"imagen": {
 				"alt": "keiko-fujimori.jpg",
-				"url": "http://res.cloudinary.com/rlipac/image/upload/v1740522933/keiko-fujimori.jpg.jpg"
+				"url": "http://res.cloudinary.com/rlipac/image/upload/v1745767541/keiko-fujimori.jpg"
 			},
 			"political_party": {
-				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745775666/images.png.png",
+				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791609/fuerza-popular.png",
 				"name": "Fuerza Popular"
 			},
 			"biography": {
-				"resumenBio": "Keiko Sofía Fujimori Higuchi (Jesús María, 25 de mayo de 1975) es una administradora de empresas y política peruana, conocida por su liderazgo del partido fujimorista Fuerza Popular y por haber sido tres veces candidata presidencial y con presencia en la segunda vuelta en todas las ocasione",
+				"resumenBio": "Líder de Fuerza Popular. Postula por cuarta vez a la presidencia tras haber sido congresista y Primera Dama.",
 				"link_wiki": "https://es.wikipedia.org/wiki/Keiko_Fujimori"
 			},
-			"_id": "67be462831229c44994f570f",
+			"_id": "680e59bd1844db50b05d2436",
 			"state": true
 		},
 		{
-			"nameCandidato": {
-				"firstName": "Pablo",
-				"lastName": "Alfonso"
-			},
-			"surname": {
-				"paternal": "Lopez-Chao",
-				"maternal": "Nava"
-			},
+			"nameCandidato": "Rafael",
+			"surname": "López Aliaga Cazorla",
 			"imagen": {
-				"alt": "Alfonso_LÃ³pez-Chau.jpg",
-				"url": "http://res.cloudinary.com/rlipac/image/upload/v1740521992/Alfonso_L%C3%83%C2%B3pez-Chau.jpg.jpg"
+				"alt": "rafael-lopez-aliaga.jpg",
+				"url": "http://res.cloudinary.com/rlipac/image/upload/v1745767542/rafael-lopez-aliaga.jpg"
 			},
 			"political_party": {
-				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745786879/ahora-nacion.png.png",
-				"name": "Ahora Naccion"
+				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791610/renovacion-popular.png",
+				"name": "Renovación Popular"
 			},
 			"biography": {
-				"resumenBio": "Pablo Alfonso López-Chau Nava (Callao, 17 de julio de 1950) es un ingeniero, académico, economista y político peruano que ejerce como el rector de la Universidad Nacional de Ingeniería. Previamente fue director del Banco de Reserva del Perú de 2006",
-				"link_wiki": "vhttps://es.wikipedia.org/wiki/Alfonso_L%C3%B3pez-Chau"
-			},
-			"_id": "67be4750b611fd1c873d8de5",
-			"state": true
-		},
-		{
-			"nameCandidato": {
-				"firstName": "Antauro",
-				"lastName": "Higor"
-			},
-			"surname": {
-				"paternal": "Humala",
-				"maternal": "Tasso"
-			},
-			"imagen": {
-				"alt": "Antauro-Humala.jpg",
-				"url": "http://res.cloudinary.com/rlipac/image/upload/v1740509631/Antauro-Humala.jpg.jpg"
-			},
-			"political_party": {
-				"name": "No definido"
-			},
-			"biography": {
-				"resumenBio": "Antauro Igor Humala Tasso es un exmilitar, escritor y político peruano. Es líder y fundador del movimiento movimiento etnocacerista, un colectivo polémico por su exaltación de la identidad peruana, el irredentismo, el antichilenismo radical y el ultranacionalismo",
-				"link_wiki": "https://es.wikipedia.org/wiki/Antauro_Humala"
-			},
-			"_id": "67be4791b611fd1c873d8de9",
-			"state": true
-		},
-		{
-			"nameCandidato": {
-				"firstName": "Hernado",
-				"lastName": ""
-			},
-			"surname": {
-				"paternal": "De Soto",
-				"maternal": "Polar"
-			},
-			"imagen": {
-				"alt": "HernandoDeSoto.jpg",
-				"url": "http://res.cloudinary.com/rlipac/image/upload/v1740523580/HernandoDeSoto.jpg.jpg"
-			},
-			"political_party": {
-				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745790216/progresemos.jpg.jpg",
-				"name": "Progresemos"
-			},
-			"biography": {
-				"resumenBio": "Hernando de Soto Polar (Arequipa, 2 de junio de 1941) es un economista[1]​[2]​[3]​ y político peruano. Es presidente del Instituto Libertad y Democracia (ILD), un think tank enfocado en el desarrollo económico en los países en desarrollo desde un punto de vista neoliberal",
-				"link_wiki": "https://es.wikipedia.org/wiki/Hernando_de_Soto_(economista)"
-			},
-			"_id": "67be483bb611fd1c873d8def",
-			"state": true
-		},
-		{
-			"nameCandidato": {
-				"firstName": "Rafael",
-				"lastName": "Bernardo"
-			},
-			"surname": {
-				"paternal": "Lopez Aliaga",
-				"maternal": "Carzola"
-			},
-			"imagen": {
-				"alt": "RafaaelLopez.jpg",
-				"url": "http://res.cloudinary.com/rlipac/image/upload/v1740523709/RafaaelLopez.jpg.jpg"
-			},
-			"political_party": {
-				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745790704/renoovacion-poppular.png.png",
-				"name": "Renovacion Popular"
-			},
-			"biography": {
-				"resumenBio": "Rafael Bernardo López Aliaga Cazorla, conocido como Rafael López Aliaga, es un empresario y político peruano y actual alcalde de Lima tras vencer en las elecciones municipales del 2022. Fue fundador y accionista de Peruval Corp SA además de ser accionista de Ferrocarril Transandino S. A.",
+				"resumenBio": "Empresario y actual Alcalde de Lima (en licencia). Promueve una agenda de derecha conservadora y 'shock' de inversiones.",
 				"link_wiki": "https://es.wikipedia.org/wiki/Rafael_L%C3%B3pez_Aliaga"
 			},
-			"_id": "67be48bcb611fd1c873d8df5",
+			"_id": "680e59bd1844db50b05d2437",
 			"state": true
 		},
 		{
-			"nameCandidato": {
-				"firstName": "Veronica",
-				"lastName": "Fanny "
-			},
-			"surname": {
-				"paternal": "Mendoza",
-				"maternal": " Frisch"
-			},
+			"nameCandidato": "Alfonso",
+			"surname": "López-Chau Nava",
 			"imagen": {
-				"alt": "VeronicAmendosa.jpg",
-				"url": "http://res.cloudinary.com/rlipac/image/upload/v1740523789/VeronicAmendosa.jpg.jpg"
+				"alt": "alfonso-lopez-chau.jpg",
+				"url": "http://res.cloudinary.com/rlipac/image/upload/v1745767543/alfonso-lopez-chau.jpg"
 			},
 			"political_party": {
-				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791350/jussnto-peru.png.png",
-				"name": "Juntos  por el Peru"
+				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791611/ahora-nacion.png",
+				"name": "Ahora Nación"
 			},
 			"biography": {
-				"resumenBio": "Verónika Fanny Mendoza Frisch (Cusco, 9 de diciembre de 1980) es una psicóloga, antropóloga, profesora y política peruanofrancesa. Es lideresa del Movimiento Nuevo Perú y fue dos veces candidata presidencial, siendo en las elecciones del 2016 y en las elecciones del 2021. Ejerció como congresista de la república representando al Cusco durante el periodo 2011-2016.",
-				"link_wiki": "https://es.wikipedia.org/wiki/Ver%C3%B3nika_Mendoza"
+				"resumenBio": "Economista y exrector de la Universidad Nacional de Ingeniería (UNI). Es visto como una figura de consenso académico y centro-izquierda.",
+				"link_wiki": "https://es.wikipedia.org/wiki/Alfonso_L%C3%B3pez_Chau"
 			},
-			"_id": "67be490cb611fd1c873d8df9",
+			"_id": "680e59bd1844db50b05d2438",
 			"state": true
 		},
 		{
-			"nameCandidato": {
-				"firstName": "Edward Phillip",
-				"lastName": " Alexander "
-			},
-			"surname": {
-				"paternal": "Butters",
-				"maternal": " Rivadeneira"
-			},
+			"nameCandidato": "Roberto Enrique",
+			"surname": "Chiabra León",
 			"imagen": {
-				"alt": "download.webp",
-				"url": "http://res.cloudinary.com/rlipac/image/upload/v1745792712/download.webp.webp"
+				"alt": "roberto-chiabra.jpg",
+				"url": "http://res.cloudinary.com/rlipac/image/upload/v1745767544/roberto-chiabra.jpg"
 			},
 			"political_party": {
-				"name": "No definido"
+				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791612/unidad-nacional.png",
+				"name": "Alianza Unidad Nacional"
 			},
 			"biography": {
-				"resumenBio": "Edward Phillip Alexander Butters Rivadeneira (Trujillo, 13 de junio de 1967) es un presentador de televisión, locutor de radio, empresario y escritor peruano.[1]​ Es fundador de la emisora peruana PBO Radio y del canal de YouTube de noticias PBO. Es conocido por conducir el programa Combutters, que se emitió originalmente en Willax Televisión entre los años 2017 y 2024."
+				"resumenBio": "General en retiro y actual congresista. Su propuesta principal se enfoca en el orden militar y la seguridad interna.",
+				"link_wiki": "https://es.wikipedia.org/wiki/Roberto_Chiabra"
 			},
-			"_id": "680eaec8c5ccead66dbd93bc",
+			"_id": "680e59bd1844db50b05d2439",
 			"state": true
 		},
 		{
-			"nameCandidato": {
-				"firstName": "Cesar",
-				"lastName": ""
-			},
-			"surname": {
-				"paternal": "Acuña",
-				"maternal": "Peralta"
-			},
+			"nameCandidato": "Jorge",
+			"surname": "Nieto Montesinos",
 			"imagen": {
-				"alt": "cesarAcuÃ±Ã±a.jpg",
-				"url": "http://res.cloudinary.com/rlipac/image/upload/v1740523440/cesarAcu%C3%83%C2%B1%C3%83%C2%B1a.jpg.jpg"
+				"alt": "jorge-nieto.jpg",
+				"url": "http://res.cloudinary.com/rlipac/image/upload/v1745767545/jorge-nieto.jpg"
 			},
 			"political_party": {
-				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745788887/Alianza_para_el_Progreso_Peru.png.png",
-				"name": "Aliaanza Para el  Progreso"
+				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791613/buen-gobierno.png",
+				"name": "Partido del Buen Gobierno"
 			},
 			"biography": {
-				"resumenBio": "César Acuña Peralta es un ingeniero químico, empresario y político peruano. Líder y fundador del partido Alianza para el Progreso, ejerce actualmente como gobernador regional de La Libertad desde el 1 de enero del 2023, cargo que ejerció anteriormente en el año 2015César Acuña Peralta es un ingeniero químico, empresario y político peruano. Líder y fundador del partido Alianza para el Progreso, ejerce actualmente como gobernador regional de La Libertad desde el 1 de enero del 2023, cargo que ejerció anteriormente en el año 2015",
-				"link_wiki": "https://es.wikipedia.org/wiki/Antauro_Humala"
+				"resumenBio": "Sociólogo y exministro de Defensa y Cultura. Lidera una propuesta de centro con énfasis en la reforma institucional.",
+				"link_wiki": "https://es.wikipedia.org/wiki/Jorge_Nieto_Montesinos"
 			},
-			"_id": "67be47afb611fd1c873d8deb",
+			"_id": "680e59bd1844db50b05d2440",
 			"state": true
 		},
 		{
-			"nameCandidato": {
-				"firstName": "Fernando ",
-				"lastName": ""
-			},
-			"surname": {
-				"paternal": "Olivera",
-				"maternal": ""
-			},
+			"nameCandidato": "Marisol",
+			"surname": "Pérez Tello",
 			"imagen": {
-				"alt": "fernadoOlivera.jpg",
-				"url": "http://res.cloudinary.com/rlipac/image/upload/v1740523522/fernadoOlivera.jpg.jpg"
+				"alt": "marisol-perez-tello.jpg",
+				"url": "http://res.cloudinary.com/rlipac/image/upload/v1745767546/marisol-perez-tello.jpg"
 			},
 			"political_party": {
-				"name": "Somoms Peru"
+				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791614/primero-la-gente.png",
+				"name": "Primero la Gente"
 			},
 			"biography": {
-				"resumenBio": "reseña biografica de aantauro Keiko",
-				"link_wiki": ""
+				"resumenBio": "Abogada y exministra de Justicia. Representa una opción de centro-derecha liberal y defensa de los derechos humanos.",
+				"link_wiki": "https://es.wikipedia.org/wiki/Marisol_P%C3%A9rez_Tello"
 			},
-			"_id": "67be4801b611fd1c873d8ded",
+			"_id": "680e59bd1844db50b05d2441",
 			"state": true
 		},
 		{
-			"nameCandidato": {
-				"firstName": "Rafael",
-				"lastName": "Alberto"
-			},
-			"surname": {
-				"paternal": "Viscarra",
-				"maternal": "Cornejo"
-			},
+			"nameCandidato": "Mesías",
+			"surname": "Guevara Amasifuén",
 			"imagen": {
-				"alt": "Martin-Vizcarra.jpg",
-				"url": "http://res.cloudinary.com/rlipac/image/upload/v1740523650/Martin-Vizcarra.jpg.jpg"
+				"alt": "mesias-guevara.jpg",
+				"url": "http://res.cloudinary.com/rlipac/image/upload/v1745767547/mesias-guevara.jpg"
 			},
 			"political_party": {
-				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791028/Logo_de_Per%C3%83%C2%BA_Primero.jpg.jpg",
-				"name": "El Peru Primero"
+				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791615/partido-morado.png",
+				"name": "Partido Morado"
 			},
 			"biography": {
-				"resumenBio": "Martín Alberto Vizcarra Cornejo es un ingeniero civil y político peruano. Fue presidente de la República del Perú desde el 23 de marzo de 2018 hasta el 9 de noviembre de 2020",
-				"link_wiki": "https://es.wikipedia.org/wiki/Mart%C3%ADn_Vizcarra"
+				"resumenBio": "Ingeniero y exgobernador regional de Cajamarca. Exmilitante de Acción Popular, ahora lidera la plancha del Partido Morado.",
+				"link_wiki": "https://es.wikipedia.org/wiki/Mes%C3%ADas_Guevara"
 			},
-			"_id": "67be4882b611fd1c873d8df3",
+			"_id": "680e59bd1844db50b05d2442",
 			"state": true
 		},
 		{
-			"nameCandidato": {
-				"firstName": "Isaac",
-				"lastName": "Alfredo"
-			},
-			"surname": {
-				"paternal": "Barnechea",
-				"maternal": "Garcia"
-			},
+			"nameCandidato": "Álvaro",
+			"surname": "Paz de la Barra",
 			"imagen": {
-				"alt": "barnecchea.jpg",
-				"url": "http://res.cloudinary.com/rlipac/image/upload/v1745787805/barnecchea.jpg.jpg"
+				"alt": "alvaro-paz-de-la-barra.jpg",
+				"url": "http://res.cloudinary.com/rlipac/image/upload/v1745767548/alvaro-paz-de-la-barra.jpg"
 			},
 			"political_party": {
-				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745787957/accion-popular.png.png",
-				"name": "Accion Popular"
+				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791616/fe-en-el-peru.png",
+				"name": "Fe en el Perú"
 			},
 			"biography": {
-				"resumenBio": "Isaac Alfredo Barnechea García (Ica, 19 de mayo de 1952)[1]​ es un escritor, periodista y político peruano. Fue candidato presidencial por el Partido Acción Popular a las elecciones generales de Perú que se llevaron a cabo el 10 de abril de 2016, en las cuales quedó en el cuarto lugar",
-				"link_wiki": "https://es.wikipedia.org/wiki/Alfredo_Barnechea"
+				"resumenBio": "Abogado y exalcalde de La Molina. Su campaña se enfoca en la renovación generacional y la gestión municipal aplicada al país.",
+				"link_wiki": "https://es.wikipedia.org/wiki/%C3%81lvaro_Paz_de_la_Barra"
 			},
-			"_id": "680e9b9d626a35a8f2619ea8",
+			"_id": "680e59bd1844db50b05d2443",
+			"state": true
+		},
+		{
+			"nameCandidato": "Roberto",
+			"surname": "Sánchez Palomino",
+			"imagen": {
+				"alt": "roberto-sanchez.jpg",
+				"url": "http://res.cloudinary.com/rlipac/image/upload/v1745767549/roberto-sanchez.jpg"
+			},
+			"political_party": {
+				"imgeUrl": "http://res.cloudinary.com/rlipac/image/upload/v1745791617/juntos-por-el-peru.png",
+				"name": "Juntos por el Perú"
+			},
+			"biography": {
+				"resumenBio": "Psicólogo y actual congresista. Exministro de Comercio Exterior durante el gobierno de Pedro Castillo, representa a la izquierda aliada.",
+				"link_wiki": "https://es.wikipedia.org/wiki/Roberto_S%C3%A1nchez_Palomino"
+			},
+			"_id": "680e59bd1844db50b05d2444",
 			"state": true
 		}
 	]
 }
-

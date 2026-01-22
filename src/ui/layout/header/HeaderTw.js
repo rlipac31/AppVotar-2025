@@ -1,19 +1,18 @@
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+'use client'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../../../../public/votos/vote.svg'
-import myFoto from  "../../../../public/votos/MIFOTO.png"
 import Image from 'next/image'
 import Link from 'next/link'
+import { montserrat } from '../../../lib/fonts'
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'Resultado', href: '#resultados', current: false },
   { name: 'Candidatos', href: '/candidatos', current: false },
-  { name: 'Como funciona', href: '#como-funciona', current: false },
-  { name: 'About', href: '#', current: false },
+  { name: 'Cómo funciona', href: '#como-funciona', current: false },
+  //{ name: 'About', href: '#', current: false },
 ]
-
-
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -21,128 +20,80 @@ function classNames(...classes) {
 
 export default function HeaderTw() {
   return (
-    <Disclosure as="nav" className="bg-slate-800">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between">
-            <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              {/* Mobile menu button*/}
-              <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
-                <span className="absolute -inset-0.5" />
-                <span className="sr-only bg-red-500">Open main menu</span>
-                <Bars3Icon aria-hidden="true" className="block size-6   group-data-open:hidden" />
-                <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-open:block" />
-              </DisclosureButton>
-            </div>
-          <div className="flex flex-1 items-center justify-end pr-6 sm:items-stretch sm:justify-start">
-                <div className="flex shrink-0 items-center">
-                <Link href={'/'}>
-                   <Image
-                  alt={'App/votar'}
-                  src={logo}
-                  width={60}
-                  height={100}
-                  sizes="(max-width: 768px) 2rem, (max-width: 1200px) 4rem" 
-                  className="h-8 w-auto"
-                  />
-                 
-                </Link>  
-                  <span className='mx-2 text-xl text-white font-medium'>AppVotar</span>
-                      
-                </div>
-              <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4  cursor-pointer">
-                    {navigation.map((item) => (
-                      <a
-                    
-                        key={item.name}
-                        href={item.href}
-                        aria-current={item.current ? 'page' : undefined}
-                        className={classNames(
-                          item.current ? 'bg-slate-900 text-white' : 'text-slate-50 hover:bg-slate-700 hover:text-slate-300',
-                          'rounded-md px-3 py-2 text-base font-medium',
-                        )}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
-              </div>
+    <Disclosure as="nav" className="fixed top-0 z-50 w-full border-b border-white/10 bg-french-blue-950/70 backdrop-blur-md">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="relative flex h-20 items-center justify-between">
+          
+          {/* Botón Menú Móvil (Izquierda) */}
+          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-xl p-2 
+            text-french-blue-200 hover:bg-french-blue-800 hover:text-white focus:outline-none focus:ring-2 
+            focus:ring-french-blue-500">
+              <span className="sr-only">Abrir menú</span>
+              <Bars3Icon aria-hidden="true" className="block size-7 group-data-open:hidden" />
+              <XMarkIcon aria-hidden="true" className="hidden size-7 group-data-open:block" />
+            </DisclosureButton>
           </div>
-           {/*     
-          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-       <button
-              type="button"
-              className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
-            >
-              <span className="absolute -inset-1.5" />
-              <span className="sr-only">View notifications</span>
-              <BellIcon aria-hidden="true" className="size-6" />
-            </button> */}
 
-            {/* Profile dropdown */}
-        {/*     <Menu as="div" className="relative ml-3">
-              <div>
-                <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
-                  <span className="absolute -inset-1.5" />
-                  <span className="sr-only">Open user menu</span>
-                 
-                          
-                    <Image
-                    alt={'foto-perfil'}
-                    src={myFoto}
-                    width={80}
-                    height={80}
-                    sizes="(max-width: 768px) 2rem, (max-width: 1200px) 4rem" 
-                     className="size-8 rounded-full"
-                    />
-                </MenuButton>
+          {/* Logo y Nombre (Centrado en móvil, Izquierda en PC) */}
+          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <Link href="/" className="flex shrink-0 items-center gap-3 transition-transform hover:scale-105">
+              <Image
+                alt="Logo AppVotar"
+                src={logo}
+                width={40}
+                height={40}
+                className="h-10 w-auto brightness-0 invert"
+              />
+              <span className={`${montserrat.className} text-xl font-black tracking-tighter text-white`}>
+                VOTO<span className="text-french-blue-500">LIBRE</span>
+              </span>
+            </Link>
+
+            {/* Navegación Desktop */}
+            <div className="hidden sm:ml-10 sm:flex sm:items-center">
+              <div className="flex space-x-1">
+                {navigation.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={classNames(
+                      item.current 
+                        ? 'bg-french-blue-600 text-white shadow-lg shadow-french-blue-600/20' 
+                        : 'text-french-blue-100 hover:bg-white/10 hover:text-white',
+                      'rounded-xl px-4 py-2 text-sm font-bold transition-all duration-200'
+                    )}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
               </div>
-              <MenuItems
-                transition
-                className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
-              >
-                <MenuItem>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
-                  >
-                    Your Profile
-                  </a>
-                </MenuItem>
-                <MenuItem>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
-                  >
-                    Settings
-                  </a>
-                </MenuItem>
-                <MenuItem>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
-                  >
-                    Sign out
-                  </a>
-                </MenuItem>
-              </MenuItems>
-            </Menu> 
+            </div>
           </div>
-          */}
+
+          {/* Botón Accion Rápida (Opcional - Login o Votar) */}
+          <div className="hidden sm:flex items-center">
+             <Link 
+              href="/candidatos" 
+              className="rounded-xl bg-white px-5 py-2.5 text-xs font-black uppercase tracking-widest text-french-blue-950 transition-all hover:bg-french-blue-50 active:scale-95"
+             >
+              Votar ya
+             </Link>
+          </div>
         </div>
       </div>
 
-      <DisclosurePanel className="sm:hidden">
-        <div className="space-y-1 px-2 pt-2 pb-3">
+      {/* Menú Móvil Desplegable */}
+      <DisclosurePanel className="sm:hidden bg-french-blue-950 border-b border-french-blue-800">
+        <div className="space-y-2 px-4 pt-2 pb-6">
           {navigation.map((item) => (
             <DisclosureButton
               key={item.name}
               as="a"
               href={item.href}
-              aria-current={item.current ? 'page' : undefined}
               className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                'block rounded-md px-3 py-2 text-base font-medium',
+                item.current ? 'bg-french-blue-600 text-white' : 'text-french-blue-200 hover:bg-french-blue-800 hover:text-white',
+                'block rounded-xl px-4 py-3 text-base font-bold'
               )}
             >
               {item.name}
