@@ -1,4 +1,8 @@
 'use client'
+
+import ThemeToggle from '../ThemeToggle';
+
+////
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../../../../public/votos/vote.svg'
@@ -72,7 +76,9 @@ export default function HeaderTw() {
           </div>
 
           {/* Botón Accion Rápida (Opcional - Login o Votar) */}
-          <div className="hidden sm:flex items-center">
+          <div className="hidden sm:flex items-center mr-4">
+           
+
              <Link 
               href="/candidatos" 
               className="rounded-xl bg-white px-5 py-2.5 text-xs font-black uppercase tracking-widest text-french-blue-950 transition-all hover:bg-french-blue-50 active:scale-95"
@@ -80,6 +86,8 @@ export default function HeaderTw() {
               Votar ya
              </Link>
           </div>
+              <ThemeToggle className="mr-0" /> 
+
         </div>
       </div>
 

@@ -6,6 +6,7 @@ import departamentos from '../../pages/api/data';
 import { ShieldCheck, Fingerprint, MapPin, SendHorizontal } from 'lucide-react';
 
 const Formulario = () => {
+    const router = useRouter(); // <-- Aquí funciona
     const { query } = useRouter();
     const { id } = query;
 
@@ -53,8 +54,10 @@ const Formulario = () => {
             setErrorVoto(false);
             setSeVoto(true);
             setErrors(null);
-            setTimeout(resetFormulario, 3000);
-
+            setTimeout(resetFormulario, 2000);
+             setTimeout(() => {
+                router.push('/'); // <-- 'router' está disponible aquí
+            }, 2100);
         } catch (error) {
             setErrorVoto(true);
             setErrors('Fallo en la conexión al servidor');
@@ -65,7 +68,7 @@ const Formulario = () => {
         <div className="w-full  mx-auto overflow-hidden rounded-2xl bg-white shadow-xl border-2 border-gray-100 dark:border-french-blue-900
          dark:bg-french-blue-950 dark:border-french-blue-800">
             {/* Banner de Justificación de Seguridad */}
-            <div className="bg-french-blue-600 p-4 text-white flex items-start gap-3">
+            <div className="bg-french-blue-800 p-4 text-white flex items-start gap-3">
                 <ShieldCheck className="w-12 h-12 flex-shrink-0 text-french-blue-100" />
                 <div className=" leading-tight">
                     <p className="font-bold mb-1">Tu voto es único y seguro</p>
@@ -118,7 +121,7 @@ const Formulario = () => {
                         id="departamentos"
                         value={localidad}
                         onChange={(e) => setLocalidad(e.target.value)}
-                        className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-100 rounded-xl outline-hidden appearance-none transition-all focus:border-french-blue-500 focus:bg-french-blue-900 dark:bg-french-blue-900/50 dark:border-french-blue-800 dark:text-white"
+                        className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-100 rounded-xl outline-hidden appearance-none transition-all focus:border-french-blue-500 dark:focus:bg-french-blue-900 dark:bg-french-blue-900/50 dark:border-french-blue-800 dark:text-white"
                     >
                         <option value="">Selecciona tu región</option>
                         {departamentos.map((dep) => (
@@ -131,7 +134,7 @@ const Formulario = () => {
                 <button
                     type="submit"
                     disabled={identity.length !== 8 || !localidad}
-                    className="w-full flex items-center justify-center gap-2 bg-french-blue-600 hover:bg-french-blue-500 disabled:bg-gray-300 text-white font-black py-4 rounded-xl transition-all active:scale-95 shadow-lg shadow-french-blue-600/20 disabled:shadow-none cursor-pointer disabled:cursor-not-allowed"
+                    className="w-full flex items-center justify-center gap-2 bg-french-blue-800 hover:bg-french-blue-900 disabled:bg-gray-500 text-white font-black py-4 rounded-xl transition-all active:scale-95 shadow-lg shadow-french-blue-600/20 disabled:shadow-none cursor-pointer disabled:cursor-not-allowed"
                 >
                     <SendHorizontal className="w-5 h-5" />
                     ENVIAR MI VOTO

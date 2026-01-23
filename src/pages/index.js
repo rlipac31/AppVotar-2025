@@ -1,4 +1,6 @@
 'use client'
+
+//
 import { montserrat, roboto, inter } from '../lib/fonts';
 import Link from 'next/link';
 import HeaderTw from '../ui/layout/header/HeaderTw';
@@ -15,7 +17,7 @@ export default function Home() {
   
 
   return (
-    <div className={`min-h-screen bg-white dark:bg-french-blue-950 ${inter.className}`}>
+    <div className={`min-h-screen transition-colors duration-500 bg-french-blue-50 dark:bg-french-blue-950 ${inter.className}`}>
       <HeaderTw />
 
       {/* Hero con Imagen de Fondo y Máscara */}
@@ -97,12 +99,12 @@ export default function Home() {
       </section>
 
       {/* Sección: Resultados */}
-      <section id="resultados" className="py-24 bg-french-blue-50 dark:bg-french-blue-900/10">
+      <section id="resultados" className="py-24 bg-white dark:bg-french-blue-900/10">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className={`${montserrat.className} text-3xl md:text-5xl font-black text-french-blue-900 dark:text-white mb-12`}>
             Intención de Voto Actual
           </h2>
-          <div className="bg-white p-6 md:p-12 rounded-3xl shadow-2xl dark:bg-french-blue-950 border border-french-blue-100 dark:border-french-blue-800">
+          <div className="bg-white p-6 md:p-12 rounded-3xl shadow-2xl dark:bg-french-blue-950 dark:border  dark:border-french-blue-800">
             <ResultVotos />
           </div>
         </div>

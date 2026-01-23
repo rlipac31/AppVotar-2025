@@ -33,15 +33,7 @@ const BarChart = ({ data = [], labels = [] }) => {  // Valores por defecto
         data: data,
         backgroundColor:colors,
            
-     /*    backgroundColor: [  
-          "rgb(255, 66, 9)",
-          "rgba(14, 132, 211, 0.92)",
-          "rgba(56, 219, 41, 0.5)",
-          "rgba(217, 238, 29, 0.86)",
-          "rgba(132, 75, 247, 0.76)",
-          "rgba(139, 111, 32, 0.5)",
-        ], */
-       // hoverBackgroundColor: ['#EF5350', '#9C27B0', '#3F51B5','4CAF50','#FFEB3B',, '#FF7043'],
+
       }
     ],
   };

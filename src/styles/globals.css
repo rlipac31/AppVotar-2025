@@ -2,6 +2,20 @@
 
   @import "tailwindcss"; 
 
+
+  @layer base {
+  :root {
+    color-scheme: light; /* Esto fuerza al navegador a renderizar en light por defecto */
+  }
+  
+  .dark {
+    color-scheme: dark;
+  }
+}
+
+/* Asegúrate de que tu configuración de dark mode sea por clase */
+@custom-variant dark (&:where(.dark, .dark *));
+
   
 input, textarea, select {
   font-size: 16px; /* Tamaño mínimo para evitar zoom automático */
@@ -26,7 +40,7 @@ html {
 
 
 @theme{
-  --color-french-blue-50: #e6f0ff;
+--color-french-blue-50: #e6f0ff;
 --color-french-blue-100: #cde1fe;
 --color-french-blue-200: #9bc2fd;
 --color-french-blue-300: #68a4fd;
@@ -39,7 +53,27 @@ html {
 --color-french-blue-950: #010e23;
 
 
-}
+} 
+ 
+
+
+
+/* @theme{
+--color-french-blue-50: #f3f2f2;
+--color-french-blue-100: #e6e5e5;
+--color-french-blue-200: #cdcbcb;
+--color-french-blue-300: #b4b1b1;
+--color-french-blue-400: #9b9797;
+--color-french-blue-500: #827d7d;
+--color-french-blue-600: #686464;
+--color-french-blue-700: #4e4b4b;
+--color-french-blue-800: #343232;
+--color-french-blue-900: #1a1919;
+--color-french-blue-950: #121111;
+
+
+}  */
+
   :root {
 
     --primary-font:"Montserrat", serif;

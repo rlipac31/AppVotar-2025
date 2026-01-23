@@ -38,7 +38,7 @@ const [miCandidatos, setMiCandidatos] = useState([]); // Inicializa con un array
    
     
   }, [candidatos, loading, error]); // Se ejecuta cuando cambian candidatosAPI, loading o error
-
+console.log('Mi Candidatos para renderizar:', miCandidatos);
 
   // Muestra el esqueleto de carga si no hay datos en miCandidatos
   // y si la API aún está cargando o si hay un error y no se cargaron los datos locales inicialmente
@@ -79,16 +79,16 @@ const [miCandidatos, setMiCandidatos] = useState([]); // Inicializa con un array
               dataCandidatos.map((candidato, index) => (
               
                   <div key={candidato._id || index}className="max-w-sm rounded overflow-hidden shadow-lg">
-                  <div className="size-40 w-60 bg-gray-200 mx-auto"></div>
+                  <div className="size-40 w-60 bg-french-blue-100 mx-auto"></div>
                   <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2"></div>
-                    <div className="col-span-1 h-2 rounded bg-gray-200"></div>
+                    <div className="col-span-1 h-2 rounded bg-french-blue-100"></div>
                   </div>
                   <div className="px-6 pt-4 pb-2">
                     <div className="space-y-3">
                       <div className="grid grid-cols-3 gap-2">
-                        <div className="col-span-2 h-2 rounded bg-gray-200"></div>
-                        <div className="col-span-1 h-2 rounded bg-gray-200"></div>
+                        <div className="col-span-2 h-2 rounded bg-french-blue-100"></div>
+                        <div className="col-span-1 h-2 rounded bg-french-blue-100"></div>
                       </div>
                       <div className="h-2 rounded bg-gray-200"></div>
                     </div>
@@ -103,8 +103,9 @@ const [miCandidatos, setMiCandidatos] = useState([]); // Inicializa con un array
                 ))} */}
 
                 {/* Contenedor Grid Responsivo */}
+             
                   <div className="flex flex-row  justify-between flex-wrap gap-6">
-                    {candidatos.map((candidato) => (
+                    {miCandidatos.map((candidato) => (
                       <CardCandidato key={candidato._id} candidato={candidato} />
                     ))}
                   </div>      

@@ -11,8 +11,11 @@ module.exports = {
     "./ui/**/*.{js,ts,jsx,tsx}",
     "./src/**/*.{js,ts,jsx,tsx}", // Agregando src
   ],
+   darkMode: 'class', // <--- IMPORTANTE: Esto le dice a Tailwind que use la clase del HTML, no el sistema
   theme: {
     extend: {},
   },
   plugins: [require("@tailwindcss/typography")],
 };
+
+

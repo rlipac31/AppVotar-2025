@@ -20,7 +20,7 @@ export async function getServerSideProps(context) {
   if (!candidatoId) {
     return { notFound: true };
   }
-  console.log("candidato encontado:>>>>>>> ", candidatoId)
+//  console.log("candidato encontado:>>>>>>> ", candidatoId)
 
 
   return {
@@ -96,7 +96,7 @@ export default function Candidato({ candidatoId }) {
                   {/* Reseña Biográfica */}
                   <div className={`mt-8 p-2 rounded-xl bg-french-blue-50 dark:bg-french-blue-900/40 ${roboto.className}`}>
                     <h3 className="text-sm font-bold text-french-blue-700 dark:text-french-blue-300 mb-2 uppercase">Biografía Resumida</h3>
-                    <p className="text-gray-700 dark:text-gray-300 leading-4 text-[12px]">
+                    <p className="text-gray-700 dark:text-gray-300 leading-4 text-[14px]">
                       {biography.resumenBio}...
                     </p>
                        <p className='mt-4 dark:bg-french-blue-900/40 dark:text-french-blue-900/40 text-[4px] dark:hover:bg-french-blue-800

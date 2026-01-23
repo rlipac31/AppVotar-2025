@@ -1,7 +1,7 @@
 import { set } from "mongoose";
 import { useState, useEffect } from "react";
 //imprptando datos  local
-import candidatosLocal from "../pages/api/dataCandidatos"
+//import candidatosLocal from "../pages/api/dataCandidatos"
 
 const useCandidato = () => {
 
@@ -25,7 +25,7 @@ const useCandidato = () => {
         if(candidatos){
            setLoading(false);
         }
-        console.log('candidatos resulat :', resultado);
+        console.log('candidatos resulat :', candidatos);
       } catch (error) {
            setError(error);
         return console.log('hubo un Error tipo:',error);

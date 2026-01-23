@@ -9,6 +9,7 @@ import HeaderTw from '../../ui/layout/header/HeaderTw';
 import Link from 'next/link';
 import Footertw from '../../ui/layout/footer/Footertw';
 import { montserrat, roboto } from '../../lib/fonts'
+
 export async function getServerSideProps(context) {
   const { id } = context.params;
 
