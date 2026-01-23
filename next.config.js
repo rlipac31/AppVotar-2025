@@ -15,4 +15,7 @@ module.exports = {
       }
     ],
   },
+  devIndicators: {
+    appIsrStatus: false, // Quita el indicador de regeneración estática
+  },
 };

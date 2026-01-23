@@ -36,12 +36,12 @@ const NavMenu = () => {
       <div className="mt-auto flex flex-col gap-8">
          <ThemeToggle className="" /> 
           
-        <Link 
+        {/* <Link 
           href="/login"
           className="flex w-full items-center justify-center rounded-lg bg-french-blue-700 py-3 text-sm font-bold text-white transition-all hover:bg-french-blue-800"
         >
           Login
-        </Link>
+        </Link> */}
       </div>
     </div>
   )

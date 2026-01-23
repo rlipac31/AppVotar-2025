@@ -39,7 +39,7 @@ const ThemeToggle = () => {
           ${isDark ? 'translate-x-7' : 'translate-x-0'}
           flex items-center justify-center text-[10px]
         `}>
-          {isDark ? <Moon className='bg-french-blue-950 text-french-blue-50 rounded-xl' /> : <Sun />}
+          {isDark ? <Moon className='bg-french-blue-950 text-french-blue-50 rounded-xl' /> : <Sun className='bg-yellow-400 rounded-xl' />}
         </div>
       </button>
     </div>

@@ -52,7 +52,7 @@ const CardCandidato = ({ candidato }) => {
             {political_party.name}
           </p>
           {political_party.imgeUrl && (
-            <div className="relative h-10 w-10 flex-shrink-0  rounded-xl overflow-hidden border-2 border-french-blue-900">
+            <div className="relative h-10 w-10 flex-shrink-0  rounded-xl overflow-hidden border-2 border-white dark:border-french-blue-900">
               <Image
                 src={political_party.imgeUrl}
                 fill

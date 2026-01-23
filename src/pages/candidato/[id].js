@@ -84,7 +84,7 @@ export default function Candidato({ candidatoId }) {
                       </h1>
                       <div className="mt-4 flex lg:flex-col flex-row-reverse gap-18 items-center md:items-start lg:gap-2">
                         <div className="relative h-16 w-16">
-                           <Image src={political_party.imgeUrl} fill className="object-contain" alt="Partido" />
+                           <Image src={political_party.imgeUrl} fill className="object-contain rounded-xl border-2 dark:border-french-blue-900" alt="Partido" />
                         </div>
                         <p className="text-sm font-bold text-gray-500 dark:text-french-blue-300 uppercase tracking-tighter">
                           {political_party.name}

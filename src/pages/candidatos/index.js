@@ -16,11 +16,11 @@ export default function CandiatoPage() {
 
 const [miCandidatos, setMiCandidatos] = useState([]); // Inicializa con un array vacío
   const { candidatos: candidatos, loading, error } = useCandidato(); // Obtén los datos de la API y el estado de carga
-
+  const candidatosAleatorios = dataCandidatos.sort(() => Math.random() - 0.5);
   useEffect(() => {
     // Al montar el componente, carga los datos locales inmediatamente
     setTimeout(() => {
-           setMiCandidatos(dataCandidatos);
+           setMiCandidatos(candidatosAleatorios);
     console.log('Candidatos Locales Cargados:', dataCandidatos);
     }, 500);
  
@@ -66,7 +66,7 @@ console.log('Mi Candidatos para renderizar:', miCandidatos);
           <HeaderTw />
         </div>
         <div className={styles.main__container}>
-          <h1 className={styles.main__container__title}>Lista de Candidatos 2026</h1>
+          <h1 className="ml-[34rem] my-6 text-3xl font-extrabold text-french-blue-900 dark:text-french-blue-50">Lista de Candidatos 2026</h1>
         
         
           <div className={styles.main__container__card}>
