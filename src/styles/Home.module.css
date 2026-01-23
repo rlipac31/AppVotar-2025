@@ -229,8 +229,7 @@
   display: block;
   }
   .main__container__card{
-    border: solid 4px green;
-      max-width: 90vw;
+  max-width: 90vw;
   min-width: 90vw;
   margin-left: 0rem;
   }
