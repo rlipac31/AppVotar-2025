@@ -71,19 +71,19 @@ export const ElectionResults = ({ resultadoVotos = [] }) => {
     // para el Pie inferior
     // --- CONFIGURACIÓN DINÁMICA ---
     // Calculamos 45px por cada candidato + 80px de margen para el título/base
-    const dynamicHeight2 = Math.max(formattedData.length * 25 + 10, 500);
+    const dynamicHeight2 = Math.max(formattedData.length * 25 + 40, 300);
 
     return (
-        <div className="space-y-10 font-sans">
+        <div className=" space-y-10 font-sans">
 
             {/* Gráfico de Barras */}
             <div
-                className="w-full bg-french-blue-900 dark:bg-french-blue-950 p-6 rounded-2xl border border-french-blue-100 dark:border-french-blue-800 shadow-2xl"
+                className=" bg-french-blue-900 dark:bg-french-blue-950 p-2 md:p-6 rounded-2xl border border-french-blue-100 dark:border-french-blue-800 shadow-2xl"
                 style={{ height: `${dynamicHeight}px` }}
             >
                 <div className="mb-6">
-                    <h2 className="text-french-blue-900 dark:text-french-blue-50 text-xl font-bold flex items-center gap-2">
-                        <span className="w-1.5 h-6  bg-french-blue-900 rounded-full"></span>
+                    <h2 className="text-french-blue-100 dark:text-french-blue-50 text-xl font-bold flex items-center gap-2">
+                        <span className="w-1.5 h-6  bg-french-blue-400 rounded-full"></span>
                         Conteo de Votos
                     </h2>
                 </div>
@@ -123,10 +123,10 @@ export const ElectionResults = ({ resultadoVotos = [] }) => {
 
 
 
-            <div className="w-full text-french-blue-950 bg-french-blue-900 dark:bg-french-blue-950 p-8 rounded-2xl dark:border border-french-blue-800 shadow-2xl"
+            <div className="hidden md:block  w-full text-french-blue-950 bg-french-blue-900 dark:bg-french-blue-950 p-8 rounded-2xl dark:border border-french-blue-800 shadow-2xl"
                 style={{ height: `${dynamicHeight2}px` }}
             >
-                <h2 className=" text-french-blue-900 dark:text-french-blue-50 text-xl font-bold mb-8 text-center uppercase tracking-tighter">
+                <h2 className=" text-french-blue-100 dark:text-french-blue-50 text-xl font-bold mb-8 text-center uppercase tracking-tighter">
                     Distribución
                 </h2>
                 <ResponsiveContainer width="100%" height="100%">
@@ -146,16 +146,13 @@ export const ElectionResults = ({ resultadoVotos = [] }) => {
                                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                                 ))}
                             </Pie>
-                            
+                           
                                 <Tooltip 
-                             
+                                  
                                 />
+                          
+                                
                                 <Legend verticalAlign="top" iconType="circle" wrapperStyle={{ fontSize: '14px' }} />
-
-                            
-
-                        
-
 
                     </PieChart>
                 </ResponsiveContainer>

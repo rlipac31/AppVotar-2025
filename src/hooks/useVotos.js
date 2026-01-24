@@ -14,7 +14,7 @@ const useVotos = () => {
           const URL =`${process.env.NEXT_PUBLIC_API_URL}/votos/result-votos`;
           const response = await fetch(URL);
           const resultado = await response.json();
-          console.log('API result:', resultado);
+         // console.log('API result:', resultado);
           setVotos(resultado)
           setLoading(false);
         } catch (error) {

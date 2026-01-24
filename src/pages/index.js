@@ -71,13 +71,22 @@ export default function Home() {
             
                 {/* Párrafo Descriptivo Extenso */}
                 <div className="max-w-2xl">
-                    <p className={`${roboto.className} text-[1rem] text-french-blue-50/95 leading-snug mb-4 text-pretty`}>
+                    <p className={`${roboto.className} hidden md:block text-[1rem] text-french-blue-50/95 leading-snug mb-4 text-pretty`}>
                         Revelamos la intención de voto real del país mediante una plataforma civil 100% independiente. 
                         Validamos cada participación con DNI para garantizar votos reales y no de 'bots', aplicando un 
                         protocolo de <strong className='text-french-blue-400'>privacidad absoluta</strong>: verificamos y
                          <strong className='text-french-blue-400'> encriptamos</strong> tu identidad pero <strong className='text-french-blue-400'>jamás 
                         almacenamos tu documento ni lo vinculamos con tu elección.</strong> Resultados transparentes 
                         construidos por tu voz hacia el 2026.
+                    </p>
+                     <p className={`${roboto.className}  md:hidden text-[12px] text-french-blue-50/95 leading-snug mb-4 text-pretty`}>
+                       Plataforma civil 100% independiente revela la intención de voto real. Se valida cada participación con
+                        DNI para asegurar votos reales, no de bots, bajo un protocolo de privacidad absoluta.
+                       <strong className='text-french-blue-400'> Tu identidad se verifica y encripta </strong>,
+                        pero jamás se almacena tu documento ni se vincula con tu elección.
+                        Resultados transparentes para el 2026 construidos por tu voz.
+
+
                     </p>
                 </div>
 
@@ -104,7 +113,7 @@ export default function Home() {
           <h2 className={`${montserrat.className} text-3xl md:text-5xl font-black text-french-blue-900 dark:text-white mb-12`}>
             Intención de Voto Actual
           </h2>
-          <div className="bg-white p-6 md:p-12 rounded-3xl shadow-2xl dark:bg-french-blue-950 dark:border  dark:border-french-blue-800">
+          <div className=" bg-white  md:p-12 rounded-3xl shadow-2xl dark:bg-french-blue-950 dark:border  dark:border-french-blue-800">
             <ResultVotos />
           </div>
         </div>

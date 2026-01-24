@@ -16,6 +16,10 @@
 /* Asegúrate de que tu configuración de dark mode sea por clase */
 @custom-variant dark (&:where(.dark, .dark *));
 
+
+
+
+
   
 input, textarea, select {
   font-size: 16px; /* Tamaño mínimo para evitar zoom automático */
@@ -86,3 +90,4 @@ html {
     --color-light:#ffffff;
   }
   
+

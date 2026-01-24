@@ -25,17 +25,17 @@ function classNames(...classes) {
 export default function HeaderTw() {
   return (
     <Disclosure as="nav" className="fixed top-0 z-50 w-full border-b border-white/10 bg-french-blue-950/70 backdrop-blur-md">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
         <div className="relative flex h-20 items-center justify-between">
           
           {/* Botón Menú Móvil (Izquierda) */}
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-xl p-2 
             text-french-blue-200 hover:bg-french-blue-800 hover:text-white focus:outline-none focus:ring-2 
-            focus:ring-french-blue-500">
+            focus:ring-french-blue-500 ">
               <span className="sr-only">Abrir menú</span>
-              <Bars3Icon aria-hidden="true" className="block size-7 group-data-open:hidden" />
-              <XMarkIcon aria-hidden="true" className="hidden size-7 group-data-open:block" />
+              <Bars3Icon aria-hidden="true" className="block size-7 group-data-open:hidden transition-all duration-700" />
+              <XMarkIcon aria-hidden="true" className="hidden size-7 group-data-open:block transition-all duration-700" />
             </DisclosureButton>
           </div>
 

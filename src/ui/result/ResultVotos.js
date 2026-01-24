@@ -14,16 +14,16 @@ const ResultVotos = ({ votosCandidato, nameCandidatos }) => {
       try {
         const URL = `${process.env.NEXT_PUBLIC_API_URL}/votos/result-votos`;
         const res = await fetch(URL);
-        console.log("Respuesta recibida del servidor votos:", res);
+      //  console.log("Respuesta recibida del servidor votos:", res);
         if(!res.ok){
           setMensageError('Error al obtener los datos');
             <div className='bg-red-200 text-2xl text-red-950'>{mesageError}</div>
         }
         const data = await res.json();
-        console.log("Datos recibidos del servidor Data   votos:", data);
+      //  console.log("Datos recibidos del servidor Data   votos:", data);
         setDataApi(data);
-        console.log("Estado dataApi actualizado:", dataApi);
-        console.log("Datos actualizados recibidos Desde Result Votos:", dataApi);
+      //  console.log("Estado dataApi actualizado:", dataApi);
+      //  console.log("Datos actualizados recibidos Desde Result Votos:", dataApi);
       /*   if (data.votosCandidato) {
           console.log("Datos actualizados recibidos Desde Result Votos:", data.nameCandidatos, data.votosCandidato);
           setChartData(data.votosCandidato);
@@ -44,7 +44,7 @@ const ResultVotos = ({ votosCandidato, nameCandidatos }) => {
 
    if (!dataApi.length < 0) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-french-blue-50 text-french-blue-900
+      <div className=" flex items-center justify-center min-h-screen bg-french-blue-50 text-french-blue-900
        dark:bg-french-blue-950 dark:text-french-blue-100">
         <p className="animate-pulse">Cargando resultados oficiales...</p>
       </div>
@@ -52,7 +52,12 @@ const ResultVotos = ({ votosCandidato, nameCandidatos }) => {
   } 
 
   return (
-    <main className="min-h-screen bg-white dark:bg-french-blue-900 p-4 md:p-8 ">
+    <main className="w-[94vw]  md:w-full px-0 md:border-green-600 min-h-screen bg-white dark:bg-french-blue-900 p-4 md:p-8 "
+    style={{
+      position:'relative',
+      right:'12px'
+    }}
+    >
       <div className="max-w-6xl mx-auto space-y-8">
         <header className="text-center space-y-2">
           <h1 className="text-4xl font-extrabold text-white tracking-tight bg-french-blue-900 

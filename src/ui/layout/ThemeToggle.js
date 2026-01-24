@@ -27,7 +27,7 @@ const ThemeToggle = () => {
 
   return (
     <div className="flex items-center gap-3">
-      <span className="text-xs font-bold text-french-blue-400 dark:text-french-blue-300 uppercase">
+      <span className="hidden md:block text-[14px] font-bold text-french-blue-300 dark:text-french-blue-100 uppercase">
         {isDark ? 'Modo Oscuro' : 'Modo Claro'}
       </span>
       <button

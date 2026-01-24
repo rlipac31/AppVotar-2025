@@ -17,26 +17,30 @@ export default function CandiatoPage() {
 const [miCandidatos, setMiCandidatos] = useState([]); // Inicializa con un array vacío
   const { candidatos: candidatos, loading, error } = useCandidato(); // Obtén los datos de la API y el estado de carga
   const candidatosAleatorios = dataCandidatos.sort(() => Math.random() - 0.5);
-  /*  useEffect(() => {
+/*    useEffect(() => {
     // Al montar el componente, carga los datos locales inmediatamente
     setTimeout(() => {
            setMiCandidatos(candidatosAleatorios);
     console.log('Candidatos Locales Cargados:', dataCandidatos);
-    }, 500);
+    }, 100);
  
-  }, []); */  /// El array vacío asegura que esto se ejecute solo una vez al montar
+  }, [miCandidatos]);  */ /// El array vacío asegura que esto se ejecute solo una vez al montar
+  //setMiCandidatos(candidatosAleatorios);
 
   useEffect(() => {
     // Cuando los datos de la API terminen de cargar (y no haya error), actualiza miCandidatos
     
       if (loading && !error && candidatos) {
-        setTimeout(() => {
+        setMiCandidatos(candidatos);
+     
+       /*  setTimeout(() => {
+         //setMiCandidatos([]);
       setMiCandidatos(candidatos);
       console.log('Candidatos de API Cargados:', candidatos);
-       }, 1000);
+       }, 500); */
     }
-   
-    
+
+
   }, [candidatos, loading, error]); // Se ejecuta cuando cambian candidatosAPI, loading o error
 console.log('Mi Candidatos para renderizar:', miCandidatos);
 
