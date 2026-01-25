@@ -27,19 +27,19 @@ const ThemeToggle = () => {
 
   return (
     <div className="flex items-center gap-3">
-      <span className="hidden md:block text-[14px] font-bold text-french-blue-300 dark:text-french-blue-100 uppercase">
+      <span className="hidden xl:block text-[14px] font-bold   text-french-blue-300 dark:text-french-blue-100 uppercase">
         {isDark ? 'Modo Oscuro' : 'Modo Claro'}
       </span>
       <button
         onClick={handleToggle}
-        className="relative w-14 h-7 bg-french-blue-200 dark:bg-french-blue-800 rounded-full p-1 transition-colors duration-300 shadow-inner"
+        className="border-0 border-white relative w-14 h-7 bg-french-blue-200 dark:bg-french-blue-800 rounded-full p-1 transition-colors duration-300 shadow-inner"
       >
         <div className={`
           bg-white w-5 h-5 rounded-full shadow transform transition-transform duration-300
           ${isDark ? 'translate-x-7' : 'translate-x-0'}
           flex items-center justify-center text-[10px]
         `}>
-          {isDark ? <Moon className='bg-french-blue-950 text-french-blue-50 rounded-xl' /> : <Sun className='bg-yellow-400 rounded-xl' />}
+          {isDark ? <Moon  className='bg-french-blue-950 text-french-blue-50 rounded-xl' /> : <Sun className='bg-yellow-400 rounded-xl' />}
         </div>
       </button>
     </div>

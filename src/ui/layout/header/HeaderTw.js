@@ -24,7 +24,7 @@ function classNames(...classes) {
 
 export default function HeaderTw() {
   return (
-    <Disclosure as="nav" className="fixed top-0 z-50 w-full border-b border-white/10 bg-french-blue-950/70 backdrop-blur-md">
+    <Disclosure as="nav" className="fixed top-0 z-50 w-full border-b  border-white/10  bg-french-blue-950/60 backdrop-blur-sm">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
         <div className="relative flex h-20 items-center justify-between">
           
@@ -47,7 +47,7 @@ export default function HeaderTw() {
                 src={logo}
                 width={40}
                 height={40}
-                className="h-10 w-auto brightness-0 invert"
+                className="h-10 w-auto brightness-0 invert "
               />
               <span className={`${montserrat.className} text-xl font-black tracking-tighter text-white`}>
                 VOTO<span className="text-french-blue-500">LIBRE</span>
@@ -55,7 +55,7 @@ export default function HeaderTw() {
             </Link>
 
             {/* Navegación Desktop */}
-            <div className="hidden sm:ml-10 sm:flex sm:items-center">
+            <div className="hidden sm:ml-10 sm:flex sm:items-center ">
               <div className="flex space-x-1">
                 {navigation.map((item) => (
                   <Link
@@ -76,8 +76,7 @@ export default function HeaderTw() {
           </div>
 
           {/* Botón Accion Rápida (Opcional - Login o Votar) */}
-          <div className="hidden sm:flex items-center mr-4">
-           
+          <div className="hidden  sm:flex items-center mr-4">
 
              <Link 
               href="/candidatos" 

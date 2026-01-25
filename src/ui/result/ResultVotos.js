@@ -22,18 +22,14 @@ const ResultVotos = ({ votosCandidato, nameCandidatos }) => {
         const data = await res.json();
       //  console.log("Datos recibidos del servidor Data   votos:", data);
         setDataApi(data);
-      //  console.log("Estado dataApi actualizado:", dataApi);
-      //  console.log("Datos actualizados recibidos Desde Result Votos:", dataApi);
-      /*   if (data.votosCandidato) {
-          console.log("Datos actualizados recibidos Desde Result Votos:", data.nameCandidatos, data.votosCandidato);
-          setChartData(data.votosCandidato);
-          setChartLabels(data.nameCandidatos.nombre);
-        } */
+
       } catch (error) {
         console.error("Error actualizando datos:", error);
+         <div className='bg-red-200 text-2xl text-red-950'>{mesageError}</div>
       }
     };
 
+  
     // Actualización automática cada 30 segundos para ser "tiempo real"
     fetchData();
     const interval = setInterval(fetchData, 600000);
@@ -64,7 +60,11 @@ const ResultVotos = ({ votosCandidato, nameCandidatos }) => {
           dark:bg-french-blue-900 px-6 py-4 rounded-lg inline-block">
             Vota<span className="text-french-blue-500 dark:text-french-blue-400">Libre</span>
           </h1>
-          <p className="text-french-blue-300">Conteo de votos en tiempo real - Elecciones Presidenciales</p>
+          <p className="text-french-blue-600 dark:text-french-blue-100">Conteo de votos en tiempo real - Elecciones Presidenciales</p>
+          <span className="text-french-blue-50 md:text-[16px]  text-[12px] font-medium bg-french-blue-600 rounded-2xl p-2 inline-block">
+            🗓️ Periodo de medición actual: Del 20 de enero al 10 de febrero de 2026. Al cerrar esta ventana,
+             se habilitará un nuevo ciclo.
+          </span>
         </header>
 
       {/* Pasamos directamente el array resultadoVotos de tu API */}
